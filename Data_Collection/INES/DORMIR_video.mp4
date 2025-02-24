@@ -1,0 +1,6766 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+  <!-- Google Tag Manager -->
+  <script type="text">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NHZSKTD');</script>
+  <!-- End Google Tag Manager -->
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.gov.br/ines",
+            "logo": "https://www.gov.br/ines/logo.png"
+        }</script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://www.gov.br/ines",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.gov.br/ines/search?SearchableText={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+        }</script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    
+        <base href="https://www.gov.br/ines/pt-br/" /><!--[if lt IE 7]></base><![endif]-->
+    
+
+    
+        
+
+<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/26" />
+
+
+
+  
+    <link rel="stylesheet" type="text/css" href="https://www.gov.br/ines/portal_css/Sunburst%20Theme/reset-cachekey-48739268f6471cbc88ee85247ec2bf9a.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="https://www.gov.br/ines/portal_css/Sunburst%20Theme/base-cachekey-09e456e7602728290e9dc3d51e128911.css" />
+    <style type="text/css" media="screen">@import url(https://www.gov.br/ines/portal_css/Sunburst%20Theme/resourceplone.app.jquerytools.dateinput-cachekey-2172ae4b9dbac190f14ea490f867f506.css);</style>
+    <link rel="stylesheet" type="text/css" href="https://www.gov.br/ines/portal_css/Sunburst%20Theme/resourceplone.formwidget.datetimestyles-cachekey-08fc3e41113bdb583094ce448aecd199.css" />
+    <style type="text/css" media="screen">@import url(https://www.gov.br/ines/portal_css/Sunburst%20Theme/jquery.autocomplete-cachekey-b8a551cff93cfa112871ebcee8ce4e7b.css);</style>
+    <link rel="stylesheet" type="text/css" href="https://www.gov.br/ines/portal_css/Sunburst%20Theme/embedder-cachekey-5234f852a2271051980e04053d65b782.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="https://www.gov.br/ines/portal_css/Sunburst%20Theme/resourcecollective.nitfnitf-cachekey-f7069b2c3852c5f3ddf5cfb4e0187aa1.css" media="screen" />
+    <style type="text/css" media="screen">@import url(https://www.gov.br/ines/portal_css/Sunburst%20Theme/resourcecollective.pollscsscollective.polls-cachekey-6bb54e0ce93bf64650dd207495deed4b.css);</style>
+        <!--[if lt IE 8]>    
+    
+    <link rel="stylesheet" type="text/css" href="https://www.gov.br/ines/portal_css/Sunburst%20Theme/IEFixes-cachekey-449518a93ec898fbd8d28199bef04369.css" media="screen" />
+        <![endif]-->
+    
+    <style type="text/css" media="all">@import url(https://www.gov.br/ines/portal_css/Sunburst%20Theme/resourcepas.plugins.loginunicologinunico-cachekey-7b922eed780c291dacd1691d29a1a4a9.css);</style>
+    <link rel="stylesheet" type="text/css" href="https://www.gov.br/ines/portal_css/Sunburst%20Theme/resourcelgpd.plugindsgov.min-cachekey-bc3e235ebaeaaf8dad248b9bab4e6818.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="https://www.gov.br/ines/portal_css/Sunburst%20Theme/resourcegovbr.policycanais-cachekey-0c47820fd6c741436e8e9c1db17d1132.css" />
+
+  
+  
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourcegovbr.policybrowser-update-cachekey-e0c838d73edd0ad4c8e13d6fd2b51c58.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourceplone.app.jquery-cachekey-9f7e3a9efdc61d7bf3f3457bb7046ec3.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourcegovbr.policyfolder_contents-cachekey-6d78d1a44f1967e1491044f8e28a27cb.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourcegovbr.policycookiebar_1_3_55-cachekey-88cfb1fd5b6bcfee346d5010977d1ad5.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourcegovbr.policyapplication_cookiebar_1_3_55-cachekey-ebba0b1e608c116665f6498e57e1399b.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/collective.js.jqueryui.custom.min-cachekey-e45b38e0e09db82a74faf1dd6fe5bb02.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourceplone.formwidget.recurrencejquery.tmpl-beta1-cachekey-358ef2fd1c302476759a649da47781b3.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourcecollective.js.bootstrapjsbootstrap.min-cachekey-cdde07de16e356321b82621f7d434199.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourcecollective.coverjsmain-cachekey-17998ad11d44a4358956bac5ad7f4bf6.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourcecollective.nitfnitf-cachekey-602e4e30af06283734bf0d2e64cab16b.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourcebrasil.gov.tilesvendorjquery.cycle2-cachekey-f15e875fefdfe83e12a9c815d5faa6e3.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourcedropdown-menu-cachekey-2b3fd7eaf2ade20b1c891b6f6c298d98.js"></script>
+    <script type="text/javascript"></script>
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourcelgpd.pluginchangeCookieImage-cachekey-86ef9d034f11228b14a3a594ea542629.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/resourcelgpd.pluginblock_cookies-cachekey-fb478687c8bcab3e11fac2a867ef13fb.js"></script>
+    <script type="text/javascript" src="https://www.gov.br/ines/portal_javascripts/Sunburst%20Theme/++resource++govbr.recomendacao/govbr.recom.12bf697a4cb12043ba4c.js"></script>
+
+
+
+  <link rel="stylesheet" href="https://www.gov.br/ines/++resource++brasil.gov.agenda/brasilgovagenda-720c34e.css" />
+
+
+  <script defer="defer" src="https://www.gov.br/ines/++resource++brasil.gov.agenda/brasilgovagenda-720c34e.js"></script>
+
+
+
+  <link rel="stylesheet" href="https://www.gov.br/ines/++resource++brasil.gov.portal/brasilgovportal-ee510e4.css" />
+
+
+  <script defer="defer" src="https://www.gov.br/ines/++resource++brasil.gov.portal/brasilgovportal-ee510e4.js"></script>
+
+
+<link rel="alternate" hreflang="pt-br" href="https://www.gov.br/ines/pt-br" />
+<link rel="alternate" hreflang="en" href="https://www.gov.br/ines/en" />
+<link rel="alternate" hreflang="es" href="https://www.gov.br/ines/es" />
+
+<title>Instituto Nacional de Educação de Surdos - INES</title>
+<link rel="http://purl.org/dc/terms/subject http://schema.org/about http://xmlns.com/foaf/0.1/primaryTopic" href="http://vocab.e.gov.br/2011/03/vcge#esquema" />
+        
+    <link rel="author" href="https://www.gov.br/ines/pt-br" title="Informações do Autor" />
+
+    <link rel="canonical" href="https://www.gov.br/ines/pt-br" />
+
+    
+    
+
+
+<script type="text/javascript">
+        jQuery(function($){
+            if (typeof($.datepicker) != "undefined"){
+              $.datepicker.setDefaults(
+                jQuery.extend($.datepicker.regional['pt-BR'],
+                {dateFormat: 'dd/mm/yy'}));
+            }
+        });
+        </script>
+
+
+
+
+    <link rel="search" href="https://www.gov.br/ines/pt-br/@@search" title="Buscar neste site" />
+
+
+
+        
+        
+        
+        
+        
+      <script id="script-buscagovbr" src="https://portalunico.estaleiro.serpro.gov.br/web-search/bundle.js"></script>
+    
+
+        
+        <meta name="generator" content="Plone - http://plone.org" />
+    
+
+    
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/ines/++theme++padrao_govbr/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/ines/++theme++padrao_govbr/favicons/favicon-32x32.png" />
+    <link rel="shortcut icon" type="image/png" href="/ines/++theme++padrao_govbr/favicons/favicon-48x48.png" />
+    <link rel="mask-icon" href="/ines/++theme++padrao_govbr/favicons/safari-pinned-tab.svg" color="#00a300" />
+    <meta name="msapplication-config" content="favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#00a300" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body.userrole-authenticated .btn.btn-success.fileinput-button span:after {
+            content: "Adicionar Arquivos" !important;
+        }
+    </style>
+    
+    <script type="module" id="barra-govbr-pro" src="https://barra.sistema.gov.br/v1/barra-govbr-wc.iife.js"></script>
+    <script type="module" src="/govbrportal/js/session.js" defer="defer"></script>
+<link href="/ines/++theme++padrao_govbr/govbrtheme-a7ca275.css" rel="stylesheet" /></head>
+
+<body id="" class="default-header-template portal-institucional template-search portaltype-lrf site-pt-br userrole-anonymous" data-base-url="https://www.gov.br/ines/pt-br" data-portal-url="https://www.gov.br/ines" dir="ltr">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe height="0" width="0" style="display:none;visibility:hidden" data-src="https://www.googletagmanager.com/ns.html?id=GTM-NHZSKTD"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="govbr-skip-menu" aria-label="Acesso rápido">
+    <a href="#wrapper" accesskey="1">
+      <span class="sr-only">Ir para o</span>
+      Conteúdo
+      <span class="access-key">1</span>
+    </a>
+    <a href="/" accesskey="2">
+      <span class="sr-only">Ir para a</span>
+      Página Inicial
+      <span class="access-key">2</span>
+    </a>
+    <a href="#main-navigation" accesskey="3">
+      <span class="sr-only">Ir para o menu de</span>
+      Navegação
+      <span class="access-key">3</span>
+    </a>
+    <a href="#govbr-busca-input" accesskey="4">
+      <span class="sr-only">Ir para a</span>
+      Busca
+      <span class="access-key">4</span>
+    </a>
+    <a href="#portal-footer" accesskey="5">
+      <span class="sr-only">Ir para o</span>
+      Mapa do site
+      <span class="access-key">5</span>
+    </a>
+  </nav>
+
+  <noscript aria-label="Aviso de Javascript desabilitado">
+    <dl class="portalMessage attention erro-javascript">
+      <dt>Atenção!</dt>
+      <dd>Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente.</dd>
+    </dl>
+  </noscript>
+<!-- modal session message --><!-- User --><!-- Header --><!--
+    Para habilitar o novo menu &#233; necess&#225;rio descoment&#225;-lo em:
+    govbr/institucional/viewlets/institucional_menu_govbr.pt
+    --><!-- <header id="site-header" class="has-navigation-swipe"> --><header id="site-header" class="has-navigation-dropdown" style="z-index: 999;">
+        <div class="header-wrapper secondary">
+            <barra-govbr class="width100 shadow-none" style="width: 100%;" id="barra-govbr" titulo="Ministério da Educação" signinhref="/govbrportal/inicializacao-autenticacao-openid.html" signouthref="/govbrportal/logout.html" linktitulo="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/26" linklogo="https://www.gov.br/pt-br" idiomas="" idiomaativo="" linksdosistema="[{&quot;title&quot;:&quot;Órgãos do Governo&quot;,&quot;href&quot;:&quot;https://www.gov.br/pt-br/orgaos-do-governo&quot;},{&quot;title&quot;:&quot;Acesso à Informação&quot;,&quot;href&quot;:&quot;https://www.gov.br/acessoainformacao/pt-br&quot;},{&quot;title&quot;:&quot;Legislação&quot;,&quot;href&quot;:&quot;http://www4.planalto.gov.br/legislacao&quot;},{&quot;title&quot;:&quot;Acessibilidade&quot;,&quot;href&quot;:&quot;https://www.gov.br/governodigital/pt-br/acessibilidade-digital&quot;}]">
+            </barra-govbr>
+        </div>
+
+        <div class="main">
+            <div class="header-wrapper">
+
+                <div class="site-name-wrapper">
+                    <a class="ico-navegacao toggle-main-navigation" href="#">
+                        <span class="sr-only">Abrir menu principal de navegação</span>
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                        <span class="fa fa-times" aria-hidden="true"></span>
+                    </a>
+
+                    <!-- <a href="/" class="site-name">Nome do site</a> -->
+                    <!-- Usar nome completo -->
+                    
+                    <div class="site-name">
+                        <a href="https://www.gov.br/ines/pt-br">Instituto Nacional de Educação de Surdos - INES</a>
+                    </div>
+                </div>
+
+                
+            <div class="termos-mais-buscados desktop">
+                <section class="source-termos-mais-buscados">
+                    <div class="source-header-termos-mais-buscados">
+                        Termos mais buscados
+                    </div>
+                    <ul class="list-termos-mais-buscados">
+                        
+                            <li class="item-termos-mais-buscados">
+                                <a href="https://www.gov.br/ines/pt-br/search?origem=termos&amp;SearchableText=assinatura">
+                                   <span class="fa-solid fa-arrow-trend-up"></span>
+                                   assinatura
+                                </a>
+                            </li>
+                        
+                            <li class="item-termos-mais-buscados">
+                                <a href="https://www.gov.br/ines/pt-br/search?origem=termos&amp;SearchableText=inss">
+                                   <span class="fa-solid fa-arrow-trend-up"></span>
+                                   inss
+                                </a>
+                            </li>
+                        
+                            <li class="item-termos-mais-buscados">
+                                <a href="https://www.gov.br/ines/pt-br/search?origem=termos&amp;SearchableText=enem">
+                                   <span class="fa-solid fa-arrow-trend-up"></span>
+                                   enem
+                                </a>
+                            </li>
+                        
+                            <li class="item-termos-mais-buscados">
+                                <a href="https://www.gov.br/ines/pt-br/search?origem=termos&amp;SearchableText=mei">
+                                   <span class="fa-solid fa-arrow-trend-up"></span>
+                                   mei
+                                </a>
+                            </li>
+                        
+                            <li class="item-termos-mais-buscados">
+                                <a href="https://www.gov.br/ines/pt-br/search?origem=termos&amp;SearchableText=imposto de renda">
+                                   <span class="fa-solid fa-arrow-trend-up"></span>
+                                   imposto de renda
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </section>
+            </div>
+            <div class="termos-mais-buscados mobile">
+                <section class="source-termos-mais-buscados">
+                    <div class="source-header-termos-mais-buscados">
+                        Termos mais buscados
+                    </div>                                
+                    <ul class="list-termos-mais-buscados">
+                        
+                            <li class="item-termos-mais-buscados">
+                                <a href="https://www.gov.br/ines/pt-br/search?origem=termos&amp;SearchableText=assinatura">
+                                    <span class="fa-solid fa-arrow-trend-up"></span>
+                                    assinatura
+                                </a>
+                            </li>
+                        
+                            <li class="item-termos-mais-buscados">
+                                <a href="https://www.gov.br/ines/pt-br/search?origem=termos&amp;SearchableText=inss">
+                                    <span class="fa-solid fa-arrow-trend-up"></span>
+                                    inss
+                                </a>
+                            </li>
+                        
+                            <li class="item-termos-mais-buscados">
+                                <a href="https://www.gov.br/ines/pt-br/search?origem=termos&amp;SearchableText=enem">
+                                    <span class="fa-solid fa-arrow-trend-up"></span>
+                                    enem
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </section>
+            </div>
+        <div class="govbr-busca-header">
+                    <div id="govbr-busca-input">
+                    </div>
+                </div>
+
+                <script>
+                    $(document).ready(function() {                
+                        $('#searchtext-label button').appendTo(".aa-InputWrapperPrefix");
+                        $('#searchtext-label').remove();
+                    });
+                </script>
+
+            </div>
+        </div>
+
+        <!-- Main Menu -->
+        <nav class="navigation-wrapper navigation-dropdown" aria-label="Menu Principal">
+            <div class="navigation-content">
+                <div id="main-navigation" class="navigation-cell">
+                    <ul class="list-navigation"><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1" class="plain">Acesso à Informação</a>
+                <ul class="submenu">
+                    <li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/institucional" class="state-published hasDropDown">
+            
+            Institucional
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/institucional/conheca-o-ines" class="state-published">
+            
+            Conheça o INES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/institucional/estrutura-organizacional" class="state-published">
+            
+            Estrutura organizacional
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/institucional/competencias-e-base-juridica" class="state-published">
+            
+            Competências e base jurídica
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/institucional/quem-e-quem" class="state-published">
+            
+            Quem é quem
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/horarios-de-funcionamento" class="state-published">
+            
+            Horários de atendimento
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/institucional/agenda-de-autoridades" class="state-published">
+            
+            Agenda de Autoridades
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas" class="state-published hasDropDown">
+            
+            Ações e programas
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/programas-projetos-e-acoes" class="state-published">
+            
+            Programas, projetos e ações
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/carta-de-servicos-2023.pdf" class="state-published">
+            
+            Carta de Serviços ao Usuário
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/renuncia-de-receitas" class="state-published">
+            
+            Renúncia de receitas
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/programas-financiados-pelo-fat" class="state-published">
+            
+            Programas financiados pelo FAT
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/acoes-2024-1.pdf" class="state-published">
+            
+            Ações 2024.1
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social" class="state-published hasDropDown">
+            
+            Participação social
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/conselhos-e-orgaos-colegiados" class="state-published">
+            
+            Conselhos e órgãos colegiados
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/conferencias" class="state-published">
+            
+            Conferências
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/comissoes" class="state-published">
+            
+            Comissões
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/comite-de-etica-em-pesquisa" class="state-published">
+            
+            Comitê de Ética em Pesquisa
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/cecines" class="state-published">
+            
+            CECINES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/audiencias-e-consultas-publicas" class="state-published">
+            
+            Audiências e consultas públicas
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/ouvidoria" class="state-published">
+            
+            Ouvidoria
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/legislacoes" class="state-published">
+            
+            Legislações
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/acessibilidade" class="state-published">
+            
+            Acessibilidade
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/servico-de-informacao-ao-cidadao" class="state-published">
+            
+            Serviço de Informação ao Cidadão (SIC)
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/auditoria" class="state-published">
+            
+            Auditorias / Relatórios de Gestão
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/dados-abertos" class="state-published">
+            
+            Dados Abertos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/receitas-e-despesas" class="state-published">
+            
+            Receitas e Despesas
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/convenios-e-transferencias-2" class="state-published hasDropDown">
+            
+            Convênios e Transferências
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/convenios-e-transferencias-2/convenios-para-estagio-obrigatorio-no-ines" class="state-published">
+            
+            Convênios para estágio obrigatório no INES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://drive.google.com/file/d/1q2nND-GJG4ojuAEd9LITHC24VYDrjo2G/view?usp=sharing" class="state-published">
+            
+            Convênios e instrumentos em vigor
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/convenios-e-transferencias-2/termos-de-execucao-descentralizada" class="state-published">
+            
+            Termos de Execução Descentralizada
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/convenios-e-transferencias-2/justificativa-de-inexigibilidade-de-chamamento-publico" class="state-published">
+            
+            Acordo de Cooperação
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/servidores" class="state-published hasDropDown">
+            
+            Servidores
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/servidores/servidores-publicos" class="state-published">
+            
+            Servidores Públicos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/servidores/funcionarios-terceirizados" class="state-published">
+            
+            Funcionários Terceirizados
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/tratamento-de-dados-pessoais" class="state-published">
+            
+            Tratamento de Dados Pessoais
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/informacoes-classificadas" class="state-published">
+            
+            Informações Classificadas
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/licitacao-e-contratos" class="state-published">
+            
+            Licitações e Contratos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/demonstracoes-contabeis" class="state-published">
+            
+            Demonstrações Contábeis
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/sistema-eletronico-de-informacoes-sei" class="state-published hasDropDown">
+            
+            Sistema Eletrônico de Informações - SEI
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/sistema-eletronico-de-informacoes-sei/arquivos/manual_do_sei_original_v-1-0__1___1___2_.pdf/view" class="state-published">
+            
+            Manual do SEI-INES
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/agenda-arr-1" class="state-published">
+            
+            Agenda ARR
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/faq" class="state-published">
+            
+            Perguntas frequentes
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/assuntos" class="plain">Assuntos</a>
+                <ul class="submenu">
+                    <li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/libras" class="state-published hasDropDown">
+            
+            Curso de Libras
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/libras/sobre-o-curso-de-libras" class="state-published">
+            
+            Sobre o Curso de Libras
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/libras/inscricoes-renovacoes-e-destrancamentos-de-matricula" class="state-published">
+            
+            Inscrições, renovações e destrancamentos de matrícula
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/libras/noticias-do-curso-de-libras" class="state-published">
+            
+            Notícias do Curso de Libras
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/libras/contatos" class="state-published">
+            
+            Contatos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/certificados/curso-de-libras/" class="state-published">
+            
+            Certificados
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/audiologia" class="state-published">
+            
+            Audiologia
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/processos-seletivos/graduacao-presencial" class="state-published">
+            
+            Vestibular
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/concursos-e-processos-seletivos" class="state-published">
+            
+            Concursos e processos seletivos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/qualificacao-e-encaminhamento-profissional" class="state-published">
+            
+            Qualificação e Encaminhamento Profissional
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/estagio" class="state-published">
+            
+            Estágio
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/programas-projetos-e-acoes/cas" class="state-published">
+            
+            CAS
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain"><a href="https://www.gov.br/ines/pt-br/visita-ao-ines" class="plain">Visita ao INES</a></li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/canais_atendimento" class="plain">Canais de Atendimento</a>
+                <ul class="submenu">
+                    <li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/fale-conosco" class="state-published">
+            
+            Fale Conosco
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/contatos-setoriais" class="state-published">
+            
+            Contatos setoriais
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/horarios-de-funcionamento" class="state-published">
+            
+            Horários de atendimento
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/ouvidoria" class="state-published">
+            
+            Ouvidoria
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/faq" class="state-published">
+            
+            Perguntas frequentes
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/servico-de-informacao-ao-cidadao" class="state-published">
+            
+            Serviço de Informação ao Cidadão
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/central-de-conteudos" class="plain">Central de Conteúdos</a>
+                <ul class="submenu">
+                    <li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/noticias" class="state-published">
+            
+            Principais notícias
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/dicionario-de-libras/" class="state-published">
+            
+            Dicionário de Libras
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/publicacoes-1" class="state-published hasDropDown">
+            
+            Publicações
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/publicacoes-1/revista-arqueiro" class="state-published">
+            
+            Revista Arqueiro
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/publicacoes-1/revista-espaco" class="state-published">
+            
+            Revista Espaço
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/publicacoes-1/revista-forum" class="state-published">
+            
+            Revista Forum
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/publicacoes-1/colecao-historica" class="state-published">
+            
+            Coleção Série Histórica
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/publicacoes-1/outras-publicacoes-do-ines" class="state-published">
+            
+            Outras publicações do INES
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="http://repositorio.ines.gov.br/" class="state-published">
+            
+            Repositório Digital Huet
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="http://seer.ines.gov.br" class="state-published">
+            
+            Portal de Periódicos
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/biblioteca" class="state-published hasDropDown">
+            
+            Biblioteca - Catálogo on-line
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/biblioteca/sobre-a-biblioteca" class="state-published">
+            
+            Sobre a Biblioteca
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://biblioteca.ines.gov.br" class="state-published">
+            
+            Catálogo on-line
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/certificados-eventos-ddhct" class="state-published">
+            
+            Certificados de eventos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://manuario.ines.gov.br/" class="state-published">
+            
+            Manuário
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia" class="plain">Desenvolvimento Científico</a>
+                <ul class="submenu">
+                    <li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/sobre-o-ddhct" class="state-published">
+            
+            Sobre o DDHCT
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/coines" class="state-published hasDropDown">
+            
+            COINES
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/coines/sobre-o-coines" class="state-published">
+            
+            Sobre o COINES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/coines/coines2024" class="state-published">
+            
+            COINES 2024
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/coines/coines-2023" class="state-published">
+            
+            COINES 2023
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/forum-bilingue-do-ines" class="state-published">
+            
+            Fórum Bilíngue do INES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/cursos-de-extensao" class="state-published">
+            
+            Cursos de Extensão
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/comite-de-etica-em-pesquisa" class="state-published">
+            
+            Comitê de Ética em Pesquisa
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/certificados-eventos-ddhct" class="state-published hasDropDown">
+            
+            Certificados de eventos
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/certificados/2022/forum-bilingue/" class="state-published">
+            
+            2022
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/certificados-eventos-ddhct/2021" class="state-published">
+            
+            2021
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/certificados-eventos-ddhct/2020" class="state-published">
+            
+            2020
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/certificados-eventos-ddhct/2018" class="state-published">
+            
+            2018
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/certificados-eventos-ddhct/2017" class="state-published">
+            
+            2017
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/projeto-de-extensao" class="state-published">
+            
+            Projetos de Extensão
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/acervo-historico-1" class="state-published hasDropDown">
+            
+            Acervo Histórico
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/acervo-historico-1/acervo-historico" class="state-published">
+            
+            Sobre o Acervo Histórico
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/proat" class="state-published hasDropDown">
+            
+            Programa de Assessoria Técnica (PROAT)
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/proat/sobre-o-proat" class="state-published">
+            
+            Sobre o PROAT
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/proat/assessoria-tecnica-em-educacao-bilingue-de-surdos-at-2024-1" class="state-published">
+            
+            Assessoria Técnica em Educação Bilíngue de Surdos - 2024
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/proat/assessoria-tecnica-em-educacao-bilingue-de-surdos-2025-1" class="state-published">
+            
+            Assessoria Técnica em Educação Bilíngue de Surdos - 2025
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/programas-projetos-e-acoes/cas" class="state-published">
+            
+            CAS
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/editais-do-ddhct" class="state-published">
+            
+            Editais do DDHCT
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/informativos-ddhct" class="state-published">
+            
+            Informes do DDHCT
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/educacao-basica" class="plain">Educação Básica</a>
+                <ul class="submenu">
+                    <li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/sobre-o-debasi" class="state-published hasDropDown">
+            
+            Sobre o Departamento
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/sobre-o-debasi/apresentacao-do-debasi" class="state-published">
+            
+            Sobre o DEBASI
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/sobre-o-debasi/organograma" class="state-published">
+            
+            Organograma
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/arquivos/2023/equipe-gestora-debasi.pdf" class="state-published">
+            
+            Equipe gestora
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines" class="state-published hasDropDown">
+            
+            Colégio de Aplicação - CAp INES
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines/secretaria-escolar" class="state-published">
+            
+            Secretaria escolar
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines/projeto-politico-pedagogico-ppp" class="state-published">
+            
+            Projeto Político-Pedagógico - PPP
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines/educacao-infantil" class="state-published">
+            
+            Educação Infantil
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines/ensino-fundamental" class="state-published">
+            
+            Ensino Fundamental
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines/ensino-medio" class="state-published">
+            
+            Ensino Médio
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines/noturno" class="state-published">
+            
+            Noturno - EJA
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/informes-do-debasi" class="state-published">
+            
+            Informes do DEBASI
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/nucleos" class="state-published hasDropDown">
+            
+            Núcleos
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/nucleos/desenvolvimento-de-instrumentos-didaticos-acessiveis-na-perspectiva-surda-didaps" class="state-published">
+            
+            Desenvolvimento de Instrumentos Didáticos Acessíveis na Perspectiva Surda - DIDAPS
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/nucleos/espaco-de-pesquisa-e-ensino-de-ciencias-aplicadas-espcie-a" class="state-published">
+            
+            Espaço de Pesquisa e Ensino de Ciências Aplicadas - EspCie-A
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/nucleos/nucleo-de-estudos-avancados-nea" class="state-published">
+            
+            Núcleo de Estudos Avançados - NEA
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/nucleos/nucleo-especializado-em-multiplas-deficiencias-e-surdez-nepms" class="state-published">
+            
+            Núcleo Especializado em Múltiplas Deficiências e Surdez - NEpMS
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/nucleos/nucleo-de-orientacao-a-saude-do-surdo-noss" class="state-published">
+            
+            Núcleo de Orientação à Saúde do Surdo - NOSS
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/divisao-de-qualificacao-e-encaminhamento-profissional-2013-diepro" class="state-published">
+            
+            Divisão de Qualificação e Encaminhamento Profissional – DIEPRO
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/divisao-socio-psicopedagogica-2013-disop" class="state-published">
+            
+            Divisão Socio-Psicopedagógica – DISOP
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/divisao-medico-odontologica-2013-dimo" class="state-published">
+            
+            Divisão médico-odontológica – DIMO
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/editais-do-debasi" class="state-published">
+            
+            Editais do DEBASI
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/ensino-superior" class="plain">Ensino Superior</a>
+                <ul class="submenu">
+                    <li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/informes-do-desu" class="state-published">
+            
+            Informes do DESU
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1" class="state-published hasDropDown">
+            
+            Sobre o Departamento
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1/sobre-o-desu" class="state-published">
+            
+            Sobre o DESU
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1/equipe-gestora-do-desu" class="state-published">
+            
+            Equipe gestora do DESU
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1/organograma" class="state-published">
+            
+            Organograma
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1/infraestrutura" class="state-published">
+            
+            Infraestrutura
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1/eventos-1" class="state-published">
+            
+            Eventos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1/documentos-departamentais" class="state-published">
+            
+            Documentos departamentais
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/graduacao-1" class="state-published hasDropDown">
+            
+            Graduação
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/graduacao-1/presencial-2" class="state-published">
+            
+            Presencial
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online" class="state-published">
+            
+            EaD
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento" class="state-published hasDropDown">
+            
+            Pós-graduação
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento/lato-sensu" class="state-published">
+            
+            Lato Sensu
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://mestrado.ines.gov.br" class="state-published">
+            
+            Stricto Sensu
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online" class="state-published hasDropDown">
+            
+            Pedagogia Bilíngue - EaD
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/sobre-o-ead" class="state-published">
+            
+            Sobre o EaD
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/curso-pedagogia-ead" class="state-published">
+            
+            Curso Pedagogia EaD
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/parceiras" class="state-published">
+            
+            Parceiras
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/processos-seletivos-ead" class="state-published">
+            
+            Processos Seletivos EaD
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/repositorio-huet" class="state-published">
+            
+            Repositório Huet
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/area-do-aluno" class="state-published">
+            
+            Área do aluno
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/projetos" class="state-published">
+            
+            Projetos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/documentacao" class="state-published">
+            
+            Documentação
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/contato" class="state-published">
+            
+            Contato
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/processos-seletivos" class="state-published">
+            
+            Informes e editais
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pesquisa-e-extensao" class="state-published hasDropDown">
+            
+            Pesquisa e Extensão
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pesquisa-e-extensao/pesquisa" class="state-published">
+            
+            Pesquisa
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pesquisa-e-extensao/extensao" class="state-published">
+            
+            Extensão
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/processos-seletivos" class="state-published hasDropDown">
+            
+            Processos seletivos
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/processos-seletivos/graduacao-presencial" class="state-published">
+            
+            Graduação / Vestibulares
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/processos-seletivos/pos-graduacao" class="state-published">
+            
+            Pós Graduação
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/processos-seletivos/pesquisa" class="state-published">
+            
+            Pesquisa
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/processos-seletivos/extensao" class="state-published">
+            
+            Extensão
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sistemas-e-agendamentos" class="state-published hasDropDown">
+            
+            Sistemas e agendamentos
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="http://producao/ines_faculdade/v3/home/?acao=entrar" class="state-published">
+            
+            Sistema Acadêmico - administrativos e docentes
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="http://producao/ines_faculdade/v3/portal_aluno/" class="state-published">
+            
+            Sistema Acadêmico - alunos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/reservas-desu" class="state-published">
+            
+            Agendamentos e reservas
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/educacao-e-direitos-humanos" class="state-published hasDropDown">
+            
+            Educação e Direitos Humanos
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/educacao-e-direitos-humanos/nucleo-ubuntu" class="state-published">
+            
+            Núcleo Ubuntu
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pibid" class="state-published hasDropDown">
+            
+            Programa Institucional de Bolsa de Iniciação à Docência - PIBID/INES
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pibid/programa-institucional-de-bolsa-de-iniciacao-a-docencia-pibid-ines" class="state-published">
+            
+            Programa Institucional de Bolsa de Iniciação à Docência - PIBID/INES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pibid/editais-coordenador-de-area" class="state-published">
+            
+            Editais Coordenador de Área
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pibid/editais-professor-supervisor" class="state-published">
+            
+            Editais Professor Supervisor
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pibid/editais-para-alunos" class="state-published">
+            
+            Editais para Alunos
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/recursos-humanos" class="plain">Recursos Humanos</a>
+                <ul class="submenu">
+                    <li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/recursos-humanos/manual-do-servidor" class="state-published">
+            
+            Manual do Servidor
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/recursos-humanos/divisao-de-acompanhamento-funcional-diaf" class="state-published">
+            
+            Divisão de Acompanhamento Funcional - DIAF
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/recursos-humanos/divisao-de-instrucao-processual-dinsp" class="state-published">
+            
+            Divisão de Instrução Processual - DINSP
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/recursos-humanos/dipag-divisao-de-pagamento" class="state-published">
+            
+            Divisão de Pagamento - DIPAG
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/sistemas" class="plain">Sistemas</a>
+                <ul class="submenu">
+                    <li>
+
+    
+
+        <a href="https://mail.google.com/a/ines.gov.br" class="state-published">
+            
+            Email
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://mail.google.com/a/aluno.ines.gov.br" class="state-published">
+            
+            Aluno (Email)
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/sistemas/sei-1" class="state-published hasDropDown">
+            
+            SEI
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://sei.mec.gov.br" class="state-published">
+            
+            SEI-INES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://sei.mec.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0" class="state-published">
+            
+            SEI - Acesso Externo
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.escolavirtual.gov.br/curso/74" class="state-published">
+            
+            Curso SEI! USAR
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://nuvem.ines.gov.br/index.php/login?clear=1" class="state-published">
+            
+            Nuvem
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://helpdesk.ines.gov.br" class="state-published">
+            
+            Helpdesk
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/sistemas/inesnet" class="state-published">
+            
+            INESNET
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://diseg.ines.gov.br" class="state-published">
+            
+            Manutenção Predial
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect/?link=producao/ines_faculdade/v3" class="state-published">
+            
+            DESU
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect?link=producao/ines_sae" class="state-published">
+            
+            SAE
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect/?link=producao/ines_controle_entrada_publico" class="state-published">
+            
+            Portaria
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect/?link=producao/ines_ses" class="state-published">
+            
+            SES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect/?link=10.0.8.21/ines_crhnovo/" class="state-published">
+            
+            CRH
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect/?link=10.0.8.21/ines_dimo/" class="state-published">
+            
+            DIMO
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect/?link=producao/ines_ses_refeitorio" class="state-published">
+            
+            DINU
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="http://sispat.ines.gov.br/ines/" class="state-published">
+            
+            SISPAT-ASI
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect?link=producao/ines_curso_libras_controle/view/login/login.php" class="state-published">
+            
+            Curso de Libras
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://medidor.rederio.br/" class="state-published">
+            
+            Medidor Rederio
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://assinador.iti.br/assinatura/index.xhtml" class="state-published">
+            
+            Assinador GovBr
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/sistemas/servicos-em-rede" class="state-published hasDropDown">
+            
+            Serviços em Rede
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://eduplay.rnp.br" class="state-published">
+            
+            Eduplay
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://conferenciaweb.rnp.br/" class="state-published">
+            
+            Conferência Web
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://filesender.rnp.br/" class="state-published">
+            
+            File Sender
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://periodicos.capes.gov.br/" class="state-published">
+            
+            Periódicos CAPES
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+                </ul>
+            </li><li id="portaltab-govbr-root" class="plain dropdown-submenu menu-govbr-root">
+            <a class="plain" href="https://www.gov.br/ines/pt-br">
+                <span>GOV.BR</span>
+            </a>
+            <!-- Menu nivel1 -->
+            <ul class="submenu navTree">
+                
+                    <li class="dropdown-submenu">
+                        <a href="https://www.gov.br/pt-br/servicos" class="hasDropDown">Serviços</a>
+                        
+                            
+    <ul class="submenu navTree">
+        
+            <li class="dropdown-submenu">
+                <a href="https://www.gov.br/pt-br/servicos/buscar-servicos-por">Buscar serviços por</a>
+                
+                    
+    <ul class="submenu navTree">
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/categorias">Categorias</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/servicos/listar_orgaos">Órgãos</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/servicos-estaduais">Estados</a>
+                
+            </li>
+        
+    </ul>
+
+                
+            </li>
+        
+            <li class="dropdown-submenu">
+                <a href="https://www.gov.br/pt-br/servicos/servicos-por-publico-alvo">Serviços por público alvo</a>
+                
+                    
+    <ul class="submenu navTree">
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_cidadaos">Cidadãos</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_empresas">Empresas</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_orgaos">Órgãos e Entidades Públicas</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_outros">Demais segmentos (ONGs, organizações sociais, etc)</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/servicos/listar_servicos_segmento?segmento=publico_alvo_servidor">Servidor Público</a>
+                
+            </li>
+        
+    </ul>
+
+                
+            </li>
+        
+    </ul>
+
+                        
+                    </li>
+                
+                    <li class="dropdown-submenu">
+                        <a href="https://www.gov.br/pt-br/temas-em-destaque" class="hasDropDown">Temas em Destaque</a>
+                        
+                            
+    <ul class="submenu navTree">
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/transparencia-fiscal-orcamento-nacional">Orçamento Nacional</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/redes-civis-de-unidades-de-atendimento-do-governo-federal">Redes de Atendimento do Governo Federal</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/protecao-de-dados-pessoais">Proteção de Dados Pessoais</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/servicos-para-imigrantes">Serviços para Imigrantes</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/politica-e-orcamento-educacional">Política e Orçamento Educacionais</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/bolsas-de-estudos-e-financiamentos-estudantis">Bolsas de Estudo e Financiamentos Estudantis</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/educacao-profissional-e-tecnologica-1">Educação Profissional e Tecnológica</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/habilidades-online-para-jovens-e-adultos">Educação Profissional para Jovens e Adultos</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/trabalho-emprego">Trabalho e Emprego</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/acesso-a-educacao-para-pessoas-com-deficiencia">Serviços para Pessoas com Deficiência</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/politica-e-legislacao-contra-a-discriminacao-racial">Combate à Discriminação Racial</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/politica-e-orcamento-de-protecao-social">Política de Proteção Social</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/politica-para-mulheres">Política para Mulheres</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/saude-reprodutiva-da-mulher">Saúde Reprodutiva da Mulher</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/desenvolvimento-cuidados-e-educacao-pre-escolar">Cuidados na Primeira Infância</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/habitacao-popular">Habitação Popular</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/temas/controle-da-poluicao-e-outras-medidas-de-precaucao">Controle de Poluição e Resíduos Sólidos</a>
+                
+            </li>
+        
+    </ul>
+
+                        
+                    </li>
+                
+                    <li class="dropdown-submenu">
+                        <a href="https://www.gov.br/pt-br/noticias" class="hasDropDown">Notícias</a>
+                        
+                            
+    <ul class="submenu navTree">
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/servicos-para-o-cidadao">Serviços para o cidadão</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/saude-e-vigilancia-sanitaria">Saúde</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/agricultura-e-pecuaria">Agricultura e Pecuária</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/assistencia-social">Cidadania e Assistência Social</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/ciencia-e-tecnologia">Ciência e Tecnologia</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/comunicacao">Comunicação</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/cultura-artes-historia-e-esportes">Cultura e Esporte</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/financas-impostos-e-gestao-publica">Economia e Gestão Pública</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/educacao-e-pesquisa">Educação e Pesquisa</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/energia-minerais-e-combustiveis">Energia</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/forcas-armadas">Forças Armadas e Defesa Civil</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/transito-e-transportes">Infraestrutura</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/justica-e-seguranca">Justiça e Segurança</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/meio-ambiente-e-clima">Meio Ambiente</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/trabalho-e-previdencia">Trabalho e Previdência</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/noticias/viagens-e-turismo">Turismo</a>
+                
+            </li>
+        
+    </ul>
+
+                        
+                    </li>
+                
+                    <li class="plain">
+                        <a href="https://www.gov.br/pt-br/apps/@@galeria-de-aplicativos" class="hasDropDown">Galeria de Aplicativos</a>
+                        
+                    </li>
+                
+                    <li class="plain">
+                        <a href="/planalto" class="hasDropDown">Acompanhe o Planalto</a>
+                        
+                    </li>
+                
+                    <li class="dropdown-submenu">
+                        <a href="https://www.gov.br/pt-br/navegacao" class="hasDropDown">Navegação</a>
+                        
+                            
+    <ul class="submenu navTree">
+        
+            <li class="plain">
+                <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">Acessibilidade</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/sitemap">Mapa do Site</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="/pt-br/termos-de-uso">Termo de Uso e Aviso de Privacidade</a>
+                
+            </li>
+        
+    </ul>
+
+                        
+                    </li>
+                
+                    <li class="plain">
+                        <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/atendimento-gov.br/duvidas-na-plataforma-de-automacao/cidadao/consultar-as-minhas-solicitacoes" class="hasDropDown">Consultar minhas solicitações</a>
+                        
+                    </li>
+                
+                    <li class="plain">
+                        <a href="https://www.gov.br/pt-br/orgaos-do-governo" class="hasDropDown">Órgãos do Governo</a>
+                        
+                    </li>
+                
+                    <li class="dropdown-submenu">
+                        <a href="https://www.gov.br/pt-br/por-dentro-do-govbr" class="hasDropDown">Por dentro do Gov.br</a>
+                        
+                            
+    <ul class="submenu navTree">
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/por-dentro-do-govbr/perguntas-frequentes">Dúvidas Frequentes em relação ao Portal gov.br</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="http://faq-login-unico.servicos.gov.br/en/latest/">Dúvidas Frequentes da conta gov.br</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/por-dentro-do-govbr/ajuda-para-navegar-o-portal">Ajuda para Navegar o Portal</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/por-dentro-do-govbr/conheca-os-elementos-do-portal">Conheça os elementos do Portal</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/participamaisbrasil/sobre">Política de e-participação</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="/pt-br/termos-de-uso">Termos de Uso</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/governodigital/pt-br">Governo Digital</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/pt-br/guia-de-edicao-de-servicos-do-gov.br/bem-vindo-editor">Guia de Edição de Serviços do Portal Gov.br</a>
+                
+            </li>
+        
+    </ul>
+
+                        
+                    </li>
+                
+                    <li class="plain">
+                        <a href="https://www.gov.br/pt-br/canais-do-executivo-federal" class="hasDropDown">Canais do Executivo Federal</a>
+                        
+                    </li>
+                
+                    <li class="dropdown-submenu">
+                        <a href="https://www.gov.br/pt-br/dados-do-governo-federal" class="hasDropDown">Dados do Governo Federal</a>
+                        
+                            
+    <ul class="submenu navTree">
+        
+            <li class="plain">
+                <a href="/governodigital/pt-br/dados-abertos">Dados Abertos</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/gestao/pt-br/acesso-a-informacao/servidores/servidores-publicos/painel-estatistico-de-pessoal">Painel Estatístico de Pessoal</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="http://paineldecompras.economia.gov.br">Painel de Compras do Governo Federal</a>
+                
+            </li>
+        
+            <li class="plain">
+                <a href="https://www.gov.br/acessoainformacao/pt-br">Acesso à Informação</a>
+                
+            </li>
+        
+    </ul>
+
+                        
+                    </li>
+                
+                    <li class="plain">
+                        <a href="https://www.gov.br/empresas-e-negocios/pt-br" class="hasDropDown">Empresas e Negócios</a>
+                        
+                    </li>
+                
+                    <li class="plain">
+                        <a href="https://www.gov.br/fazenda/pt-br/canais_atendimento/ouvidoria/simplifique/simplifique" class="hasDropDown">Simplifique!</a>
+                        
+                    </li>
+                
+                    <li class="plain">
+                        <a href="https://www.gov.br/pt-br/termos-de-uso" class="hasDropDown">termo-de-uso-aviso-de-privacidade-e-cookies</a>
+                        
+                    </li>
+                
+            </ul>
+        </li></ul>
+                </div>
+            </div>
+
+            <div class="navigation-content-extra">
+                <div class="links-redes-wrap">
+            <div class="links-uteis">
+              <div class="titulo">Links Úteis</div>
+              <ul>
+                <!-- <li>
+                  <a href="#">Órgãos do Governo</a>
+                </li> -->
+                <li>
+                  <a href="https://www.gov.br/pt-br/apps/@@galeria-de-aplicativos">Galeria de Aplicativos</a>
+                </li>
+                <li>
+                  <a href="https://www.gov.br/pt-br/participacao-social">Participe</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-accessibility">
+              <ul>
+                <!--li>
+                  <a
+                    href="https://www.gov.br/pt-br/orgaos-do-governo"
+                    class="orgaos-de-governo"
+                    i18n:translate="orgaos_do_governo"
+                    >Órgãos do Governo</a
+                  >
+                </li-->
+                <li>
+                  <a href="https://www.gov.br/pt-br/apps/@@galeria-de-aplicativos">Galeria de Aplicativos</a>
+                </li>
+                <!--li>
+                  <a href="http://www4.planalto.gov.br/legislacao" i18n:translate="legislacao"
+                    >Legislação</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.gov.br/acessoainformacao/pt-br" i18n:translate="acesso_a_informacao"
+                    >Acesso à Informação</a
+                  >
+                </li-->
+                <li>
+                  <a href="https://www.gov.br/pt-br/participacao-social">Participe</a>
+                </li>
+              </ul>
+            </div>
+          
+                    <div class="redes-sociais">
+                        <div class="titulo">Redes sociais</div>
+                    <ul class="portal-redes">
+            
+                <li class="portalredes-youtube portalredes-item">
+                    <a href="https://www.youtube.com/@INES.oficial">YouTube</a>
+                </li>
+            
+                <li class="portalredes-facebook portalredes-item">
+                    <a href="https://www.facebook.com/INES.oficial">Facebook</a>
+                </li>
+            
+                <li class="portalredes-whatsapp_canal portalredes-item">
+                    <a href="https://www.whatsapp.com/channel/0029VaIPPidGufJ37XaXy42i">WhatsApp canal</a>
+                </li>
+            
+        </ul></div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Menu -->
+        
+    </header><div id="portal-breadcrumbs-wrapper">
+        <nav id="breadcrumbs" aria-label="Histórico de navegação (Breadcrumbs)">
+            <div class="content">
+                <span class="sr-only">Você está aqui:</span>
+                <span class="home">
+            <a href="https://www.gov.br/ines/pt-br">
+              <span class="fas fa-home" aria-hidden="true"></span>
+                <span class="sr-only">Página Inicial</span>
+                </a>
+                </span>
+            
+
+    
+    
+    <span dir="ltr" id="breadcrumbs-1">
+        
+            
+            
+            <span id="breadcrumbs-current">Busca</span>
+         
+    </span>
+
+</div>
+        </nav>
+    </div><h1 id="page-title-alt" class="sr-only">Busca</h1><!-- <div class="video"></div> --><div id="wrapper">
+        <!-- Columns -->
+
+        <div id="main">
+            
+
+            <main id="main-content">
+
+            <div id="viewlet-above-content">
+
+
+
+
+    
+        <script type="application/ld+json">{"@context": "http://schema.org", "itemListElement": [{"position": 1, "@type": "ListItem", "item": "https://www.gov.br/ines/pt-br/search", "name": "Busca"}], "@type": "BreadcrumbList"}</script>
+    
+
+
+
+
+    
+</div>
+
+            
+                <div class="">
+
+                    
+
+                    
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+    
+
+
+                    
+                        <div id="content">
+
+                            
+
+                            
+
+        <div id="buscaContainer"></div>
+         <input type="hidden" id="aba_todos" value="ServicoEstadual,collective.nitf.content,App,Campanha,Servico,Site,Document,sc.embedder,News Item,File,Tema,Link,Audio,Image,ExternalContent" />
+         <input type="hidden" id="aba_servicos" value="Servico,Tema" />
+         <input type="hidden" id="aba_servicos_estaduais" value="ServicoEstadual" />
+         <input type="hidden" id="aba_noticias" value="Campanha,News Item,collective.nitf.content" />
+         <input type="hidden" id="aba_apps" value="App" />
+         <input type="hidden" id="aba_sites" value="Site" />
+         <input type="hidden" id="url_base" name="url_base" value="https://portalunico.estaleiro.serpro.gov.br/api/" />
+         <input type="hidden" id="site_url" name="site_url" value="//www.gov.br/ines" />
+         <input type="hidden" id="portal_nome" name="nome" value="Instituto Nacional de Educação de Surdos - INES" />
+         <input type="hidden" id="categorias_filtro" name="categorias_filtro" value="[]" />
+         <input type="hidden" id="orgaos_filtro" name="orgaos_filtro" value="[]" />
+         <input type="hidden" id="orgao_id" name="orgao_id" value="instituto-nacional-de-educacao-de-surdos" />
+
+         <script type="text/javascript">
+
+           function getParameterByName(name, url) {
+              if (!url) url = window.location.href;
+              name = name.replace(/[\[\]]/g, '\\$&');
+              var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                  results = regex.exec(url);
+              if (!results) return null;
+              if (!results[2]) return '';
+              return decodeURIComponent(results[2].replace(/\+/g, ' '));
+           }
+           
+           searchableText = getParameterByName("SearchableText");
+           tagBusca = getParameterByName("Subject%3Alist");
+           if (!tagBusca) {
+              tagBusca = getParameterByName("Subject:list");
+           }
+
+           document.addEventListener("DOMContentLoaded", function(event) {
+             let urlBase = document.getElementById("url_base").value;
+             if (!urlBase.endsWith("/")) {
+               urlBase += "/";
+             }
+
+             let busca = new govBrBusca.Busca({
+               target: document.getElementById("buscaContainer"),
+               props: {
+                 urlBase: urlBase,
+                 urlPortal: document.getElementById("site_url").value,
+                 portalNome: document.getElementById("portal_nome").value,
+                 categoriasFiltro: JSON.parse(document.getElementById("categorias_filtro").value),
+                 orgaosFiltro: JSON.parse(document.getElementById("orgaos_filtro").value),
+                 orgaoId: document.getElementById("orgao_id").value,
+                 textoBusca: searchableText,
+                 tagBusca: tagBusca,
+                 gruposTipos: {
+                   "Midia": [
+                     {
+                       "descricao": "Arquivo",
+                       "tipos": ["File"]
+                     },
+                     {
+                       "descricao": "Áudio",
+                       "tipos": ["Audio", "MPEG Audio File", "OGG Audio File"]
+                     },
+                     {
+                       "descricao": "Conteúdo Externo",
+                       "tipos": ["External Content"]
+                     },
+                     {
+                       "descricao": "Imagem",
+                       "tipos": ["Image"]
+                     },
+                     {
+                       "descricao": "Multimídia",
+                       "tipos": ["sc.embedder"]
+                     },
+                   ]
+                 },
+                 categorias: [
+                   {
+                     "descricao": "Serviços",
+                     "tipos": document.getElementById("aba_servicos").value.split(","),
+                     "idAba": "servicos"
+                   },
+                   {
+                     "descricao": "Serviços Estaduais",
+                     "tipos": document.getElementById("aba_servicos_estaduais").value.split(","),
+                     "idAba": "servicos_estaduais"
+                   },
+                   {
+                     "descricao": "Notícias",
+                     "tipos": document.getElementById("aba_noticias").value.split(","),
+                     "idAba": "noticias"
+                   },
+                   {
+                     "descricao": "Sites",
+                     "tipos": document.getElementById("aba_sites").value.split(","),
+                     "idAba": "sites"
+                   },
+                   {
+                     "descricao": "Apps",
+                     "tipos": document.getElementById("aba_apps").value.split(","),
+                     "idAba": "apps"
+                   },
+                   {
+                     "descricao": "Todos",
+                     "tipos": document.getElementById("aba_todos").value.split(","),
+                     "idAba": "todos"
+                   }
+                 ],
+                 ordenacao: '-relevancia',
+                 tamanhoPagina: 30
+               }
+             });
+           });
+
+         </script>
+    
+                        </div>
+                    
+
+                    
+                </div>
+            
+
+            <div id="viewlet-below-content">
+
+
+
+
+  
+
+
+<div class="govbr-recom-config" data-recom-history-title="Serviços que você acessou">
+
+
+            
+    
+
+</div>
+
+
+</div>
+        </main>
+
+            
+        </div>
+
+        <div class="conteudo-relacionado"></div>
+
+        <div class="govbr-history-render"></div>
+
+        <footer id="portal-footer" class="portal-footer">
+            <div class="footer-wrapper">
+                <div class="govbr-logo"></div>
+                <!--<div class="colunas-rodape">
+              <div class="coluna-menu">-->
+                <ul class="list-navigation"><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1" class="plain">Acesso à Informação</a>
+                <ul class="submenu">
+                    <li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/institucional" class="state-published hasDropDown">
+            
+            Institucional
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/institucional/conheca-o-ines" class="state-published">
+            
+            Conheça o INES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/institucional/estrutura-organizacional" class="state-published">
+            
+            Estrutura organizacional
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/institucional/competencias-e-base-juridica" class="state-published">
+            
+            Competências e base jurídica
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/institucional/quem-e-quem" class="state-published">
+            
+            Quem é quem
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/horarios-de-funcionamento" class="state-published">
+            
+            Horários de atendimento
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/institucional/agenda-de-autoridades" class="state-published">
+            
+            Agenda de Autoridades
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas" class="state-published hasDropDown">
+            
+            Ações e programas
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/programas-projetos-e-acoes" class="state-published">
+            
+            Programas, projetos e ações
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/carta-de-servicos-2023.pdf" class="state-published">
+            
+            Carta de Serviços ao Usuário
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/renuncia-de-receitas" class="state-published">
+            
+            Renúncia de receitas
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/programas-financiados-pelo-fat" class="state-published">
+            
+            Programas financiados pelo FAT
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/acoes-2024-1.pdf" class="state-published">
+            
+            Ações 2024.1
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social" class="state-published hasDropDown">
+            
+            Participação social
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/conselhos-e-orgaos-colegiados" class="state-published">
+            
+            Conselhos e órgãos colegiados
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/conferencias" class="state-published">
+            
+            Conferências
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/comissoes" class="state-published">
+            
+            Comissões
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/comite-de-etica-em-pesquisa" class="state-published">
+            
+            Comitê de Ética em Pesquisa
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/cecines" class="state-published">
+            
+            CECINES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/audiencias-e-consultas-publicas" class="state-published">
+            
+            Audiências e consultas públicas
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/ouvidoria" class="state-published">
+            
+            Ouvidoria
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/legislacoes" class="state-published">
+            
+            Legislações
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/acessibilidade" class="state-published">
+            
+            Acessibilidade
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/servico-de-informacao-ao-cidadao" class="state-published">
+            
+            Serviço de Informação ao Cidadão (SIC)
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/auditoria" class="state-published">
+            
+            Auditorias / Relatórios de Gestão
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/dados-abertos" class="state-published">
+            
+            Dados Abertos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/receitas-e-despesas" class="state-published">
+            
+            Receitas e Despesas
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/convenios-e-transferencias-2" class="state-published hasDropDown">
+            
+            Convênios e Transferências
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/convenios-e-transferencias-2/convenios-para-estagio-obrigatorio-no-ines" class="state-published">
+            
+            Convênios para estágio obrigatório no INES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://drive.google.com/file/d/1q2nND-GJG4ojuAEd9LITHC24VYDrjo2G/view?usp=sharing" class="state-published">
+            
+            Convênios e instrumentos em vigor
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/convenios-e-transferencias-2/termos-de-execucao-descentralizada" class="state-published">
+            
+            Termos de Execução Descentralizada
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/convenios-e-transferencias-2/justificativa-de-inexigibilidade-de-chamamento-publico" class="state-published">
+            
+            Acordo de Cooperação
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/servidores" class="state-published hasDropDown">
+            
+            Servidores
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/servidores/servidores-publicos" class="state-published">
+            
+            Servidores Públicos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/servidores/funcionarios-terceirizados" class="state-published">
+            
+            Funcionários Terceirizados
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/tratamento-de-dados-pessoais" class="state-published">
+            
+            Tratamento de Dados Pessoais
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/informacoes-classificadas" class="state-published">
+            
+            Informações Classificadas
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/licitacao-e-contratos" class="state-published">
+            
+            Licitações e Contratos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/demonstracoes-contabeis" class="state-published">
+            
+            Demonstrações Contábeis
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/sistema-eletronico-de-informacoes-sei" class="state-published hasDropDown">
+            
+            Sistema Eletrônico de Informações - SEI
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/sistema-eletronico-de-informacoes-sei/arquivos/manual_do_sei_original_v-1-0__1___1___2_.pdf/view" class="state-published">
+            
+            Manual do SEI-INES
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/agenda-arr-1" class="state-published">
+            
+            Agenda ARR
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/faq" class="state-published">
+            
+            Perguntas frequentes
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/assuntos" class="plain">Assuntos</a>
+                <ul class="submenu">
+                    <li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/libras" class="state-published hasDropDown">
+            
+            Curso de Libras
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/libras/sobre-o-curso-de-libras" class="state-published">
+            
+            Sobre o Curso de Libras
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/libras/inscricoes-renovacoes-e-destrancamentos-de-matricula" class="state-published">
+            
+            Inscrições, renovações e destrancamentos de matrícula
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/libras/noticias-do-curso-de-libras" class="state-published">
+            
+            Notícias do Curso de Libras
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/libras/contatos" class="state-published">
+            
+            Contatos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/certificados/curso-de-libras/" class="state-published">
+            
+            Certificados
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/audiologia" class="state-published">
+            
+            Audiologia
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/processos-seletivos/graduacao-presencial" class="state-published">
+            
+            Vestibular
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/concursos-e-processos-seletivos" class="state-published">
+            
+            Concursos e processos seletivos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/qualificacao-e-encaminhamento-profissional" class="state-published">
+            
+            Qualificação e Encaminhamento Profissional
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/assuntos/estagio" class="state-published">
+            
+            Estágio
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/programas-projetos-e-acoes/cas" class="state-published">
+            
+            CAS
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain"><a href="https://www.gov.br/ines/pt-br/visita-ao-ines" class="plain">Visita ao INES</a></li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/canais_atendimento" class="plain">Canais de Atendimento</a>
+                <ul class="submenu">
+                    <li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/fale-conosco" class="state-published">
+            
+            Fale Conosco
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/contatos-setoriais" class="state-published">
+            
+            Contatos setoriais
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/horarios-de-funcionamento" class="state-published">
+            
+            Horários de atendimento
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/ouvidoria" class="state-published">
+            
+            Ouvidoria
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/canais_atendimento/faq" class="state-published">
+            
+            Perguntas frequentes
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/servico-de-informacao-ao-cidadao" class="state-published">
+            
+            Serviço de Informação ao Cidadão
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/central-de-conteudos" class="plain">Central de Conteúdos</a>
+                <ul class="submenu">
+                    <li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/noticias" class="state-published">
+            
+            Principais notícias
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/dicionario-de-libras/" class="state-published">
+            
+            Dicionário de Libras
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/publicacoes-1" class="state-published hasDropDown">
+            
+            Publicações
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/publicacoes-1/revista-arqueiro" class="state-published">
+            
+            Revista Arqueiro
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/publicacoes-1/revista-espaco" class="state-published">
+            
+            Revista Espaço
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/publicacoes-1/revista-forum" class="state-published">
+            
+            Revista Forum
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/publicacoes-1/colecao-historica" class="state-published">
+            
+            Coleção Série Histórica
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/publicacoes-1/outras-publicacoes-do-ines" class="state-published">
+            
+            Outras publicações do INES
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="http://repositorio.ines.gov.br/" class="state-published">
+            
+            Repositório Digital Huet
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="http://seer.ines.gov.br" class="state-published">
+            
+            Portal de Periódicos
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/biblioteca" class="state-published hasDropDown">
+            
+            Biblioteca - Catálogo on-line
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/central-de-conteudos/biblioteca/sobre-a-biblioteca" class="state-published">
+            
+            Sobre a Biblioteca
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://biblioteca.ines.gov.br" class="state-published">
+            
+            Catálogo on-line
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/certificados-eventos-ddhct" class="state-published">
+            
+            Certificados de eventos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://manuario.ines.gov.br/" class="state-published">
+            
+            Manuário
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia" class="plain">Desenvolvimento Científico</a>
+                <ul class="submenu">
+                    <li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/sobre-o-ddhct" class="state-published">
+            
+            Sobre o DDHCT
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/coines" class="state-published hasDropDown">
+            
+            COINES
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/coines/sobre-o-coines" class="state-published">
+            
+            Sobre o COINES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/coines/coines2024" class="state-published">
+            
+            COINES 2024
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/coines/coines-2023" class="state-published">
+            
+            COINES 2023
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/forum-bilingue-do-ines" class="state-published">
+            
+            Fórum Bilíngue do INES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/cursos-de-extensao" class="state-published">
+            
+            Cursos de Extensão
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/participacao-social/comite-de-etica-em-pesquisa" class="state-published">
+            
+            Comitê de Ética em Pesquisa
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/certificados-eventos-ddhct" class="state-published hasDropDown">
+            
+            Certificados de eventos
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/certificados/2022/forum-bilingue/" class="state-published">
+            
+            2022
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/certificados-eventos-ddhct/2021" class="state-published">
+            
+            2021
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/certificados-eventos-ddhct/2020" class="state-published">
+            
+            2020
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/certificados-eventos-ddhct/2018" class="state-published">
+            
+            2018
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/certificados-eventos-ddhct/2017" class="state-published">
+            
+            2017
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/projeto-de-extensao" class="state-published">
+            
+            Projetos de Extensão
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/acervo-historico-1" class="state-published hasDropDown">
+            
+            Acervo Histórico
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/acervo-historico-1/acervo-historico" class="state-published">
+            
+            Sobre o Acervo Histórico
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/proat" class="state-published hasDropDown">
+            
+            Programa de Assessoria Técnica (PROAT)
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/proat/sobre-o-proat" class="state-published">
+            
+            Sobre o PROAT
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/proat/assessoria-tecnica-em-educacao-bilingue-de-surdos-at-2024-1" class="state-published">
+            
+            Assessoria Técnica em Educação Bilíngue de Surdos - 2024
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/proat/assessoria-tecnica-em-educacao-bilingue-de-surdos-2025-1" class="state-published">
+            
+            Assessoria Técnica em Educação Bilíngue de Surdos - 2025
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/acesso-a-informacao-1/acoes-e-programas/programas-projetos-e-acoes/cas" class="state-published">
+            
+            CAS
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/editais-do-ddhct" class="state-published">
+            
+            Editais do DDHCT
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ciencia-e-tecnologia/informativos-ddhct" class="state-published">
+            
+            Informes do DDHCT
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/educacao-basica" class="plain">Educação Básica</a>
+                <ul class="submenu">
+                    <li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/sobre-o-debasi" class="state-published hasDropDown">
+            
+            Sobre o Departamento
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/sobre-o-debasi/apresentacao-do-debasi" class="state-published">
+            
+            Sobre o DEBASI
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/sobre-o-debasi/organograma" class="state-published">
+            
+            Organograma
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/arquivos/2023/equipe-gestora-debasi.pdf" class="state-published">
+            
+            Equipe gestora
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines" class="state-published hasDropDown">
+            
+            Colégio de Aplicação - CAp INES
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines/secretaria-escolar" class="state-published">
+            
+            Secretaria escolar
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines/projeto-politico-pedagogico-ppp" class="state-published">
+            
+            Projeto Político-Pedagógico - PPP
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines/educacao-infantil" class="state-published">
+            
+            Educação Infantil
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines/ensino-fundamental" class="state-published">
+            
+            Ensino Fundamental
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines/ensino-medio" class="state-published">
+            
+            Ensino Médio
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/colegio-de-aplicacao-cap-ines/noturno" class="state-published">
+            
+            Noturno - EJA
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/informes-do-debasi" class="state-published">
+            
+            Informes do DEBASI
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/nucleos" class="state-published hasDropDown">
+            
+            Núcleos
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/nucleos/desenvolvimento-de-instrumentos-didaticos-acessiveis-na-perspectiva-surda-didaps" class="state-published">
+            
+            Desenvolvimento de Instrumentos Didáticos Acessíveis na Perspectiva Surda - DIDAPS
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/nucleos/espaco-de-pesquisa-e-ensino-de-ciencias-aplicadas-espcie-a" class="state-published">
+            
+            Espaço de Pesquisa e Ensino de Ciências Aplicadas - EspCie-A
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/nucleos/nucleo-de-estudos-avancados-nea" class="state-published">
+            
+            Núcleo de Estudos Avançados - NEA
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/nucleos/nucleo-especializado-em-multiplas-deficiencias-e-surdez-nepms" class="state-published">
+            
+            Núcleo Especializado em Múltiplas Deficiências e Surdez - NEpMS
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/nucleos/nucleo-de-orientacao-a-saude-do-surdo-noss" class="state-published">
+            
+            Núcleo de Orientação à Saúde do Surdo - NOSS
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/divisao-de-qualificacao-e-encaminhamento-profissional-2013-diepro" class="state-published">
+            
+            Divisão de Qualificação e Encaminhamento Profissional – DIEPRO
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/divisao-socio-psicopedagogica-2013-disop" class="state-published">
+            
+            Divisão Socio-Psicopedagógica – DISOP
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/divisao-medico-odontologica-2013-dimo" class="state-published">
+            
+            Divisão médico-odontológica – DIMO
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/educacao-basica/editais-do-debasi" class="state-published">
+            
+            Editais do DEBASI
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/ensino-superior" class="plain">Ensino Superior</a>
+                <ul class="submenu">
+                    <li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/informes-do-desu" class="state-published">
+            
+            Informes do DESU
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1" class="state-published hasDropDown">
+            
+            Sobre o Departamento
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1/sobre-o-desu" class="state-published">
+            
+            Sobre o DESU
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1/equipe-gestora-do-desu" class="state-published">
+            
+            Equipe gestora do DESU
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1/organograma" class="state-published">
+            
+            Organograma
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1/infraestrutura" class="state-published">
+            
+            Infraestrutura
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1/eventos-1" class="state-published">
+            
+            Eventos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento-1/documentos-departamentais" class="state-published">
+            
+            Documentos departamentais
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/graduacao-1" class="state-published hasDropDown">
+            
+            Graduação
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/graduacao-1/presencial-2" class="state-published">
+            
+            Presencial
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online" class="state-published">
+            
+            EaD
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento" class="state-published hasDropDown">
+            
+            Pós-graduação
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sobre-o-departamento/lato-sensu" class="state-published">
+            
+            Lato Sensu
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://mestrado.ines.gov.br" class="state-published">
+            
+            Stricto Sensu
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online" class="state-published hasDropDown">
+            
+            Pedagogia Bilíngue - EaD
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/sobre-o-ead" class="state-published">
+            
+            Sobre o EaD
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/curso-pedagogia-ead" class="state-published">
+            
+            Curso Pedagogia EaD
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/parceiras" class="state-published">
+            
+            Parceiras
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/processos-seletivos-ead" class="state-published">
+            
+            Processos Seletivos EaD
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/repositorio-huet" class="state-published">
+            
+            Repositório Huet
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/area-do-aluno" class="state-published">
+            
+            Área do aluno
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/projetos" class="state-published">
+            
+            Projetos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/documentacao" class="state-published">
+            
+            Documentação
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/contato" class="state-published">
+            
+            Contato
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/nucleo-de-educacao-online/processos-seletivos" class="state-published">
+            
+            Informes e editais
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pesquisa-e-extensao" class="state-published hasDropDown">
+            
+            Pesquisa e Extensão
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pesquisa-e-extensao/pesquisa" class="state-published">
+            
+            Pesquisa
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pesquisa-e-extensao/extensao" class="state-published">
+            
+            Extensão
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/processos-seletivos" class="state-published hasDropDown">
+            
+            Processos seletivos
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/processos-seletivos/graduacao-presencial" class="state-published">
+            
+            Graduação / Vestibulares
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/processos-seletivos/pos-graduacao" class="state-published">
+            
+            Pós Graduação
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/processos-seletivos/pesquisa" class="state-published">
+            
+            Pesquisa
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/processos-seletivos/extensao" class="state-published">
+            
+            Extensão
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/sistemas-e-agendamentos" class="state-published hasDropDown">
+            
+            Sistemas e agendamentos
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="http://producao/ines_faculdade/v3/home/?acao=entrar" class="state-published">
+            
+            Sistema Acadêmico - administrativos e docentes
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="http://producao/ines_faculdade/v3/portal_aluno/" class="state-published">
+            
+            Sistema Acadêmico - alunos
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/reservas-desu" class="state-published">
+            
+            Agendamentos e reservas
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/educacao-e-direitos-humanos" class="state-published hasDropDown">
+            
+            Educação e Direitos Humanos
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/educacao-e-direitos-humanos/nucleo-ubuntu" class="state-published">
+            
+            Núcleo Ubuntu
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pibid" class="state-published hasDropDown">
+            
+            Programa Institucional de Bolsa de Iniciação à Docência - PIBID/INES
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pibid/programa-institucional-de-bolsa-de-iniciacao-a-docencia-pibid-ines" class="state-published">
+            
+            Programa Institucional de Bolsa de Iniciação à Docência - PIBID/INES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pibid/editais-coordenador-de-area" class="state-published">
+            
+            Editais Coordenador de Área
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pibid/editais-professor-supervisor" class="state-published">
+            
+            Editais Professor Supervisor
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/ensino-superior/pibid/editais-para-alunos" class="state-published">
+            
+            Editais para Alunos
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/recursos-humanos" class="plain">Recursos Humanos</a>
+                <ul class="submenu">
+                    <li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/recursos-humanos/manual-do-servidor" class="state-published">
+            
+            Manual do Servidor
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/recursos-humanos/divisao-de-acompanhamento-funcional-diaf" class="state-published">
+            
+            Divisão de Acompanhamento Funcional - DIAF
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/recursos-humanos/divisao-de-instrucao-processual-dinsp" class="state-published">
+            
+            Divisão de Instrução Processual - DINSP
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/recursos-humanos/dipag-divisao-de-pagamento" class="state-published">
+            
+            Divisão de Pagamento - DIPAG
+        </a>
+
+        
+    
+</li>
+                </ul>
+            </li><li class="plain dropdown-submenu"><a href="https://www.gov.br/ines/pt-br/sistemas" class="plain">Sistemas</a>
+                <ul class="submenu">
+                    <li>
+
+    
+
+        <a href="https://mail.google.com/a/ines.gov.br" class="state-published">
+            
+            Email
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://mail.google.com/a/aluno.ines.gov.br" class="state-published">
+            
+            Aluno (Email)
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/sistemas/sei-1" class="state-published hasDropDown">
+            
+            SEI
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://sei.mec.gov.br" class="state-published">
+            
+            SEI-INES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://sei.mec.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&amp;id_orgao_acesso_externo=0" class="state-published">
+            
+            SEI - Acesso Externo
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.escolavirtual.gov.br/curso/74" class="state-published">
+            
+            Curso SEI! USAR
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://nuvem.ines.gov.br/index.php/login?clear=1" class="state-published">
+            
+            Nuvem
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://helpdesk.ines.gov.br" class="state-published">
+            
+            Helpdesk
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/sistemas/inesnet" class="state-published">
+            
+            INESNET
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://diseg.ines.gov.br" class="state-published">
+            
+            Manutenção Predial
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect/?link=producao/ines_faculdade/v3" class="state-published">
+            
+            DESU
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect?link=producao/ines_sae" class="state-published">
+            
+            SAE
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect/?link=producao/ines_controle_entrada_publico" class="state-published">
+            
+            Portaria
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect/?link=producao/ines_ses" class="state-published">
+            
+            SES
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect/?link=10.0.8.21/ines_crhnovo/" class="state-published">
+            
+            CRH
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect/?link=10.0.8.21/ines_dimo/" class="state-published">
+            
+            DIMO
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect/?link=producao/ines_ses_refeitorio" class="state-published">
+            
+            DINU
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="http://sispat.ines.gov.br/ines/" class="state-published">
+            
+            SISPAT-ASI
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://www.ines.gov.br/redirect?link=producao/ines_curso_libras_controle/view/login/login.php" class="state-published">
+            
+            Curso de Libras
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://medidor.rederio.br/" class="state-published">
+            
+            Medidor Rederio
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://assinador.iti.br/assinatura/index.xhtml" class="state-published">
+            
+            Assinador GovBr
+        </a>
+
+        
+    
+</li>
+
+<li class="dropdown-submenu">
+
+    
+
+        <a href="https://www.gov.br/ines/pt-br/sistemas/servicos-em-rede" class="state-published hasDropDown">
+            
+            Serviços em Rede
+        </a>
+
+        <ul class="submenu navTree navTreeLevel1">
+            
+
+
+
+
+<li>
+
+    
+
+        <a href="https://eduplay.rnp.br" class="state-published">
+            
+            Eduplay
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://conferenciaweb.rnp.br/" class="state-published">
+            
+            Conferência Web
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://filesender.rnp.br/" class="state-published">
+            
+            File Sender
+        </a>
+
+        
+    
+</li>
+
+<li>
+
+    
+
+        <a href="https://periodicos.capes.gov.br/" class="state-published">
+            
+            Periódicos CAPES
+        </a>
+
+        
+    
+</li>
+
+
+
+
+        </ul>
+    
+</li>
+                </ul>
+            </li></ul>
+                <!--</div>
+            </div>-->
+
+                
+        <div class="lgpd-reset-cookies">
+        <a href="#" class="reset-cookies" onclick="_redefinirCookies(); return false;">Redefinir Cookies</a>
+    </div>
+    <div class="redes-e-logos">
+                    <div class="redes-sociais">
+                        <div class="titulo">Redes sociais</div>
+                    <ul class="portal-redes">
+            
+                <li class="portalredes-youtube portalredes-item">
+                    <a href="https://www.youtube.com/@INES.oficial">YouTube</a>
+                </li>
+            
+                <li class="portalredes-facebook portalredes-item">
+                    <a href="https://www.facebook.com/INES.oficial">Facebook</a>
+                </li>
+            
+                <li class="portalredes-whatsapp_canal portalredes-item">
+                    <a href="https://www.whatsapp.com/channel/0029VaIPPidGufJ37XaXy42i">WhatsApp canal</a>
+                </li>
+            
+        </ul></div>
+                    <div id="footer-govbr">
+                        <div id="wrapper-footer-brasil">
+                            <a class="logo-acesso-footer" href="https://www.gov.br/acessoainformacao/pt-br" title="Acesse o portal sobre o acesso à informação">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 117 49" height="49" width="117" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><defs><style type="text/css"><![CDATA[.a {font: normal bold 11px Open Sans, sans-serif;}]]></style></defs><circle cx="22" cy="23" r="22" fill="#222"></circle><path style="stroke:#fff;stroke-width:9;stroke-linecap:round;" d="m 22,23 v 13"></path><path style="stroke:#222;stroke-width:4;stroke-linejoin:round;" d="m 4,43 3,-6 4,3 z"></path><circle r="4.5" cy="11" cx="22" fill="#fff"></circle><g fill="#222"><text x="47" y="22"><tspan class="a" y="18">Acesso à</tspan><tspan class="a" x="47" y="31">Informação</tspan></text></g></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="texto-copyright">
+    Todo o conteúdo deste site está publicado sob a licença <a rel="license" href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.
+  </div>
+        </footer>
+
+        <nav class="back-to-top" aria-label="Voltar ao topo da página">
+            <a href="#wrapper">
+                <span class="fa fa-chevron-up"></span>
+                <span class="sr-only">Voltar ao topo da página</span>
+            </a>
+        </nav>
+    <div id="govbr-busca-input-data" style="display: none" data-autocomplete-api="https://portalunico.estaleiro.serpro.gov.br/api/" data-autocomplete-index="//www.gov.br/ines" data-autocomplete-orgao="instituto-nacional-de-educacao-de-surdos" data-autocomplete-search="https://www.gov.br/ines/pt-br" data-autocomplete-portal="https://www.gov.br" data-historico-title="Histórico de buscas" data-servicos-title="Serviços e Apps" data-sugestoes-title="Você quis dizer?" data-input-placeholder="O que você procura?"></div></div><div id="main-navigation-overlay"></div><div class="redefinir-cookies">
+
+    
+
+</div><div class="dsgov">
+    <div class="br-cookiebar default d-none" tabindex="-1">
+      <div class="br-modal">
+        <div class="br-card">
+          <div class="container">
+            <div class="wrapper">
+              <div class="br-modal-header entry-content">
+                <div class="br-modal-title"></div>
+                <div class="last-update"></div>
+                <div class="entry-text"></div>
+              </div>
+              <div class="br-modal-body">
+                <div class="info-text"></div>
+                <div class="br-list main-content">
+                </div>
+              </div>
+            </div>
+            <div class="br-modal-footer actions">
+              <button class="br-button small btn-manage" type="button" aria-label="Definir Cookies"></button>
+              <button class="br-button secondary small reject-all" type="button" aria-label="Rejeitar cookies">Rejeitar</button>
+              <button class="br-button secondary small btn-accept" type="button" aria-label="Aceitar"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><script id="lgpd-cookie-handling" type="text/javascript" src="https://www.gov.br/ines/++resource++govbr.policy/lgpd_cookie_handling_1_3_88.js"></script><div id="govbr-login-overlay-wrapper"></div><div id="govbr-busca-por-voz-overlay-wrapper">
+        <div class="busca-por-voz">
+            <span class="transcpt-text">Fale Agora</span>
+            <a href="#" id="btn-refazer-busca" class="refazer-busca">
+                Refazer a busca
+            </a>
+            
+            <a href="#" id="btn-ouvindo" class="btn-microfone ouvindo">
+                <span class="fas fa-microphone"></span>
+            </a>
+
+            <a href="#" id="btn-nao-entendi" class="btn-microfone nao-entendi">
+                <span class="fas fa-microphone"></span>
+            </a>
+
+            <a href="#" id="btn-fechar">
+                <span class="fas fa-times"></span>
+            </a>
+        </div>
+    </div><div vw="" class="enabled">
+        <div vw-access-button="" class="active"></div>
+        <div vw-plugin-wrapper="">
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div><!-- relato 4118176 --><script>
+        window.onbeforeunload = null;
+    </script><script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script><script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app', 'https://vlibras.gov.br/config/default_logo.json');
+    </script><script>
+        window.addEventListener('abrir-cookie-config', function() {
+            _redefinirCookies(); return false;
+        });
+        window.addEventListener('ACCESSTOKEN_ERROR', function() {
+            window.location.href = "/govbrportal/logout.html";
+        });
+    </script><script type="text/javascript" src="/ines/++theme++padrao_govbr/govbrtheme-a7ca275.js"></script><div id="plone-analytics"></div></body>
+</html>

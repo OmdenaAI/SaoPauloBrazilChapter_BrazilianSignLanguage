@@ -14,3 +14,6 @@ __pycache__/
 
 # Specifically ignore all video directories
 **/videos/
+
+# MacOS system files
+.DS_Store

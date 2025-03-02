@@ -17,8 +17,10 @@ dependencies = [
 [project.optional-dependencies]
 # Dependencies for data collection, cleaning, and preprocessing
 data = [
+    "aiohttp>=3.11.13",
+    "beautifulsoup4>=4.13.3",
     "opencv-python",
-    "scikit-learn",  # for data preprocessing
+    "scikit-learn", # for data preprocessing
 ]
 
 # Dependencies for model development and training

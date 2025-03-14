@@ -1,0 +1,107 @@
+[
+    {
+        "dataset": "INES",
+        "word": "abacaxi",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "abacaxi",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "abanar",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "abanar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "abandonar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "abandonar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "abelha",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "aben\u00e7oar",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "aben\u00e7oar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "acabar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "acabar",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "INES",
+        "word": "acabar",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "acabar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "aceitar",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "aceitar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "acidente",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "acidente",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "acompanhar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "acompanhar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "aconselhar",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "aconselhar",
+        "chosen_video": 1
+    }
+]

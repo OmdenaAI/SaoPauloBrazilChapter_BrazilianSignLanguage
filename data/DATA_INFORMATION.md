@@ -57,6 +57,8 @@ The following columns should be present in all metadata.csv files regardless of 
 
 ### INES Dataset
 Columns in INES metadata:
+- `scraped_label` - The originally scraped label. 
+  - Some labels were unified e.g. 'MAIS1' & 'MAIS2' 
 - `file_exists` - True/False to indicate if the video is accessible at `video_url`
   - Some INES videos are inaccessible due to INES's own issues.
   - Each `video_url` was checked in `raw_metadata.ipynb` and this column was made
@@ -67,6 +69,8 @@ Columns in INES metadata:
 - `exemplo libras` - Example sentence (in Libras notation?)
 - `classe gramatical` - Grammatical class
 - `origem` - Origin of the sign
+- `number_in_label` - True/False column indicating if the `scraped_label` has a number in it.
+  - used to process `scraped_label`s into `label`s
 
 ### V-Librasil Dataset
 Columns in V-Librasil metadata:

@@ -1,0 +1,31 @@
+label,video_url,signer_number,data_source,file_exists,letter,assuntos,acepção,exemplo,exemplo libras,classe gramatical,origem,scraped_label,scraped_video_url,sign_variant,signer_number.1,video_url_root,video_url_ext,number_in_label,sign_url,signer_order,filename,filename_index
+ABACAXI,https://www.ines.gov.br/dicionario-de-libras/public/media/palavras/videos/abacaxiSm_Prog001.mp4,0.0,ne,True,A,FRUTA,"Fruta de casca grossa e áspera. Sua polpa pode ser consumida pura, em forma de sucos, doces e sorvetes.","Hoje tomei suco de abacaxi, ele estava ácido.",HOJE S-U-C-O ABACAXI BEBER ÁCID@.,SUBSTANTIVO,Nacional,,,,,,,,,,ABACAXI_ne_1.mp4,1
+ABACAXI,https://videos.nals.cce.ufsc.br/SignBank/Vídeos/ABACAXI.mp4,2.0,sb,,,,,,,,,ABACAXI,https://levantelab.storage.googleapis.com/libras/gerais/iLZ21NCD2VtjAvpznGTTNiawuUBneWCQhzMJ9ODz.mp4,1.0,2.0,levantelab,mp4,False,,,ABACAXI_sb_2.mp4,2
+ABACAXI,https://libras.cin.ufpe.br/storage/videos/20210127091036_6011583c87073.mp4,3.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/817,312.0,ABACAXI_vl_3.mp4,3
+ABACAXI,https://libras.cin.ufpe.br/storage/videos/20210128115432_601378e8d032d.mp4,1.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/817,312.0,ABACAXI_vl_4.mp4,4
+ABACAXI,https://libras.cin.ufpe.br/storage/videos/20210929043133_6154bf1508f4a.mp4,2.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/817,312.0,ABACAXI_vl_5.mp4,5
+ABACAXI,,,uf,,,,,,,,,,,,,,,,,,ABACAXI_uf_6.mp4,6
+BANANA,https://www.ines.gov.br/dicionario-de-libras/public/media/palavras/videos/bananaSm_Prog001.mp4,0.0,ne,True,B,FRUTA,"O fruto da bananeira, comestível, saboroso e muito nutritivo. Pode ser consumido ao natural e usado no preparo de doces e vitaminas.",Comer banana é importante para a saúde.,BANANA COMER IMPORTANTE SAÚDE BO@.,SUBSTANTIVO,Nacional,,,,,,,,,,BANANA_ne_1.mp4,1
+BANANA,https://videos.nals.cce.ufsc.br/SignBank/V%C3%ADdeos/BANANA.mp4,1.0,sb,,,,,,,,,BANANA,https://videos.nals.cce.ufsc.br/SignBank/V%C3%ADdeos/BANANA.mp4,1.0,1.0,videos,mp4,False,,,BANANA_sb_2.mp4,2
+BANANA,https://libras.cin.ufpe.br/storage/videos/20201222122443_5fe20fbb47921.mp4,1.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/164,123.0,BANANA_vl_3.mp4,3
+BANANA,https://libras.cin.ufpe.br/storage/videos/20201222122443_5fe20fbb554a7.mp4,2.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/164,123.0,BANANA_vl_4.mp4,4
+BANANA,https://libras.cin.ufpe.br/storage/videos/20210329110319_6061de2742ee7.mp4,3.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/164,123.0,BANANA_vl_5.mp4,5
+BANANA,,,uf,,,,,,,,,,,,,,,,,,BANANA_uf_6.mp4,6
+CAFÉ,https://www.ines.gov.br/dicionario-de-libras/public/media/palavras/videos/cafeSm_Prog001.mp4,0.0,ne,True,C,FRUTA,"O fruto do cafeeiro, arbusto da família das rubiáceas, muito cultivado no Sul do Brasil. De sua semente, torrada e moida, é feita uma infusão de cor marrom-escura, bastante apreciada.",O Brasil tem muitas plantações de café.,BRASIL CAFÉ PLANTAÇÃO MUIT@.,SUBSTANTIVO,Nacional,,,,,,,,,,CAFÉ_ne_1.mp4,1
+CAFÉ,https://videos.nals.cce.ufsc.br/SignBank/V%C3%ADdeos/CAF%C3%89.mp4,1.0,sb,,,,,,,,,CAFÉ,https://videos.nals.cce.ufsc.br/SignBank/V%C3%ADdeos/CAF%C3%89.mp4,1.0,1.0,videos,mp4,False,,,CAFÉ_sb_2.mp4,2
+CAFÉ,https://libras.cin.ufpe.br/storage/videos/20210126070737_601092a939fcf.mp4,1.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/852,132.0,CAFÉ_vl_3.mp4,3
+CAFÉ,https://libras.cin.ufpe.br/storage/videos/20210411080241_6072d751c1a00.mp4,3.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/852,132.0,CAFÉ_vl_4.mp4,4
+CAFÉ,https://libras.cin.ufpe.br/storage/videos/20210613113637_60c617f5a4e11.mp4,2.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/852,132.0,CAFÉ_vl_5.mp4,5
+CAFÉ,,,uf,,,,,,,,,,,,,,,,,,CAFÉ_uf_6.mp4,6
+CARNE,https://www.ines.gov.br/dicionario-de-libras/public/media/palavras/videos/carneSm_Prog001.mp4,0.0,ne,True,C,ALIMENTO/BEBIDA,"Tecido muscular de animais, usado na alimentação.","Comer carne todos os dias não é bom para a saúde, é ruim.",CARNE TODO-DIA BO@ NÃO SAÚDE RUIM.,SUBSTANTIVO,Nacional,,,,,,,,,,CARNE_ne_1.mp4,1
+CARNE,https://videos.nals.cce.ufsc.br/SignBank/V%C3%ADdeos/CARNE.mp4,1.0,sb,,,,,,,,,CARNE,https://videos.nals.cce.ufsc.br/SignBank/V%C3%ADdeos/CARNE.mp4,1.0,1.0,videos,mp4,False,,,CARNE_sb_2.mp4,2
+CARNE,https://libras.cin.ufpe.br/storage/videos/20210126070759_601092bf73513.mp4,1.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/853,132.0,CARNE_vl_3.mp4,3
+CARNE,https://libras.cin.ufpe.br/storage/videos/20210411080306_6072d76a749a2.mp4,3.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/853,132.0,CARNE_vl_4.mp4,4
+CARNE,https://libras.cin.ufpe.br/storage/videos/20210613111901_60c613d510001.mp4,2.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/853,132.0,CARNE_vl_5.mp4,5
+CARNE,,,uf,,,,,,,,,,,,,,,,,,CARNE_uf_6.mp4,6
+CEBOLA,https://www.ines.gov.br/dicionario-de-libras/public/media/palavras/videos/cebolaSm_Prog001.mp4,0.0,ne,True,C,LEGUME/VERDURA,"Bulbo de uma planta da família das liliáceas, também chamada de cebola. De aroma forte, sabor acre e ligeiramente adocicado, é muito usada como tempero.",Ela detesta tomate e cebola.,EL@ DETESTAR TOMATE coisa-redondaLAMINAR^CHORAR .,SUBSTANTIVO,Nacional,,,,,,,,,,CEBOLA_ne_1.mp4,1
+CEBOLA,https://videos.nals.cce.ufsc.br/SignBank/V%C3%ADdeos/CEBOLA.mp4,1.0,sb,,,,,,,,,CEBOLA,https://videos.nals.cce.ufsc.br/SignBank/V%C3%ADdeos/CEBOLA.mp4,1.0,1.0,videos,mp4,False,,,CEBOLA_sb_2.mp4,2
+CEBOLA,https://libras.cin.ufpe.br/storage/videos/20210124043727_600dcc77de427.mp4,3.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/830,312.0,CEBOLA_vl_3.mp4,3
+CEBOLA,https://libras.cin.ufpe.br/storage/videos/20210126072950_601097dec5bd3.mp4,1.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/830,312.0,CEBOLA_vl_4.mp4,4
+CEBOLA,https://libras.cin.ufpe.br/storage/videos/20210613125025_60c629417c513.mp4,2.0,vl,,,,,,,,,,,,,,,,https://libras.cin.ufpe.br/sign/830,312.0,CEBOLA_vl_5.mp4,5
+CEBOLA,,,uf,,,,,,,,,,,,,,,,,,CEBOLA_uf_6.mp4,6

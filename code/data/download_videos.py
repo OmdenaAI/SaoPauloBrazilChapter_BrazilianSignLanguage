@@ -1,33 +1,8 @@
-# we can use this code to:
-# - Download all videos for one word from one data source 
-#   - (for review during the data organisation and cleaning)
-# - Download all videos for one word from all data sources 
-#   - (for review during the data organisation and cleaning)
-# - Download all videos for a collection of words from all data source 
-#   - (for creating our raw combined dataset, after we have decided our target words)
 
-### Ben's Template
-# import requests
-# import pandas as pd
-
-# def download_video_from_link(
-#     link: str,
-#     output_path: str,
-# ) -> None:
-#     """
-#     Download a video from a URL and save it to a file.
-#     """
-#     pass
-
-# def download_video_from_metadata(
-#     metadata: pd.DataFrame,
-#     data_source: str,
-#     output_path: str,
-# ) -> None:
-#     """
-#     Download all videos for one word from one data source.
-#     """
-#     pass
+import requests
+import os
+import pandas as pd
+import cv2
 
 data_source_codes = {
     'ne': 'INES',
@@ -35,11 +10,6 @@ data_source_codes = {
     'sb': 'SignBank',
     'uf': 'UFV'
 }
-
-### Pooja's Work
-import requests
-import os
-import pandas as pd
 
 def download_video_from_link(link: str, output_path: str, verify_ssl: bool = True) -> None:
     """
@@ -120,6 +90,33 @@ def download_videos_from_metadata(label: str, metadata: pd.DataFrame, data_sourc
         
         if verbose:
             print(f"Downloading video {i} from {video_url}")
-        download_video_from_link(video_url, video_path, verify_ssl=verify_ssl)
-        print(f"")
+        # download_video_from_link(video_url, video_path, verify_ssl=verify_ssl)
+        if data_source_key == 'sb':
+            download_video_from_link(video_url, video_path, verify_ssl=False)
+        else:
+            download_video_from_link(video_url, video_path, verify_ssl=verify_ssl)
         i += 1
+
+
+def get_video_metadata(video_path):
+    cap = cv2.VideoCapture(video_path)
+    if not cap.isOpened():
+        return None
+    
+    metadata = {
+        "filename": os.path.basename(video_path),
+        "frame_count": int(cap.get(cv2.CAP_PROP_FRAME_COUNT)),
+        "fps": cap.get(cv2.CAP_PROP_FPS),
+        "width": int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)),
+        "height": int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)),
+        "duration_sec": int(cap.get(cv2.CAP_PROP_FRAME_COUNT) / cap.get(cv2.CAP_PROP_FPS)) if cap.get(cv2.CAP_PROP_FPS) > 0 else 0
+    }
+    
+    cap.release()
+    return metadata
+
+def collect_metadata_from_directory(directory):
+    video_files = sorted([f for f in os.listdir(directory) if f.endswith(".mp4")])
+    all_metadata = [get_video_metadata(os.path.join(directory, f)) for f in video_files]
+
+    return all_metadata

@@ -119,12 +119,6 @@ def measure_motion_background_subtraction(input_video_path):
     cap.release()
     return motion_measurements[1:]
 
-def get_motion_data(path):
-    mm_1 = measure_motion_basic(path)
-    mm_2 = measure_motion_optical_flow(path)
-    mm_3 = measure_motion_background_subtraction(path)
-    return [mm_1, mm_2, mm_3]
-
 def normalize_list_of_data(data):
     """Normalize a list of data to the range [0, 1]."""
     min_val = min(data)

@@ -303,7 +303,7 @@ def create_frame_with_motion_graph(frame, motion_data, frame_number, legend_labe
     
     return combined_frame
 
-def play_video_with_motion_graph(input_video_path, motion_data, legend_labels=None, graph_height=300, figsize=(12, 4), dpi=100, alpha=1):
+def play_video_with_motion_graph(input_video_path, motion_data, legend_labels=None, graph_height=300, figsize=(12, 4), dpi=100, alpha=1, output_video_path=None):
     # Define target dimensions for the output video
     target_width = 1280  # Set your desired width
     target_height = 720  # Set your desired height
@@ -315,6 +315,16 @@ def play_video_with_motion_graph(input_video_path, motion_data, legend_labels=No
     if not ret:
         print("Error reading video.")
         return
+
+    # Get video properties
+    fps = int(cap.get(cv2.CAP_PROP_FPS))
+    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+
+    # Initialize video writer if output path is provided
+    if output_video_path:
+        fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+        out = cv2.VideoWriter(output_video_path, fourcc, fps, (target_width, target_height + graph_height))
+        print(f"Saving video to: {output_video_path}")
 
     # Create the OpenCV window
     cv2.namedWindow("Video with Motion Graph", cv2.WINDOW_NORMAL)
@@ -345,24 +355,38 @@ def play_video_with_motion_graph(input_video_path, motion_data, legend_labels=No
             # Show the combined frame
             cv2.imshow("Video with Motion Graph", combined_frame)
 
+            # Write frame to output video if output path is provided
+            if output_video_path:
+                out.write(combined_frame)
+                # Print progress
+                if frame_number % 30 == 0:  # Update every 30 frames
+                    progress = (frame_number / total_frames) * 100
+                    print(f"Progress: {progress:.1f}%", end='\r')
+
             # Check if the window is closed
             if cv2.getWindowProperty("Video with Motion Graph", cv2.WND_PROP_VISIBLE) < 1:
+                if output_video_path:
+                    out.release()
                 cap.release()
                 cv2.destroyAllWindows()
                 return
 
             # Wait for a key press to exit or move to next frame
             if cv2.waitKey(1) & 0xFF == ord('q'):
+                if output_video_path:
+                    out.release()
                 cap.release()
                 cv2.destroyAllWindows()
                 return
 
         # Video has ended, wait for user input
-        print("""Video ended. Press 'r' to replay or 'q' to quit.
-            CLOSING THE WINDOW BY CLICKING X WILL KEEP THE CELL RUNNING!""")
+        print("\nVideo ended. Press 'r' to replay or 'q' to quit.")
+        print("CLOSING THE WINDOW BY CLICKING X WILL KEEP THE CELL RUNNING!")
         while True:
             # Check if the window is closed
             if cv2.getWindowProperty("Video with Motion Graph", cv2.WND_PROP_VISIBLE) < 1:
+                if output_video_path:
+                    out.release()
                 cap.release()
                 cv2.destroyAllWindows()
                 return
@@ -371,10 +395,12 @@ def play_video_with_motion_graph(input_video_path, motion_data, legend_labels=No
             if key == ord('r'):  # Replay the video
                 break
             elif key == ord('q'):  # Quit the program
+                if output_video_path:
+                    out.release()
                 cap.release()
                 cv2.destroyAllWindows()
                 return
-            
+
 def show_multiple_frames_one_plot(path, frame_numbers, motion_data, figsize=(20, 3), alpha=1, legend_labels=None):
     fig, axs = plt.subplots(1, len(frame_numbers), figsize=figsize)
 

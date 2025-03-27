@@ -1,15 +1,7 @@
-
 import requests
 import os
 import pandas as pd
 import cv2
-
-data_source_codes = {
-    'ne': 'INES',
-    'vl': 'V-Librasil',
-    'sb': 'SignBank',
-    'uf': 'UFV'
-}
 
 def download_video_from_link(link: str, output_path: str, verify_ssl: bool = True) -> None:
     """
@@ -29,7 +21,7 @@ def download_video_from_link(link: str, output_path: str, verify_ssl: bool = Tru
             for chunk in response.iter_content(chunk_size=8192):
                 video_file.write(chunk)
         
-        print(f"Video successfully downloaded to {output_path}")
+        print(f"\tVideo successfully downloaded to {output_path}")
     
     except requests.exceptions.RequestException as e:
         print(f"Error downloading video from {link}: {e}")
@@ -45,58 +37,36 @@ def make_video_filename(row: pd.Series, index: int) -> str:
     """
     return f"{row['label']}_{row['data_source']}_{index}.mp4"
 
-def download_videos_from_metadata(label: str, metadata: pd.DataFrame, data_source_key: str = None, combined: bool = False, verbose: bool = True, verify_ssl: bool = True) -> None:
+def download_videos_from_metadata(metadata: pd.DataFrame, output_path: str, verify_ssl_settings: dict = None, verbose: bool = True) -> None:
     """
-    Download all videos for one word from one data source.
+    Download all videos from the metadata DataFrame.
     Args:
-        label (str): The label of the word/video to download.
-        metadata (pd.DataFrame): DataFrame containing metadata for videos (e.g., URLs).
-        data_source_key (str): The key of the data source to download from. (e.g. 'ne', 'vl', 'sb', 'uf') If None, all data sources will be downloaded from.
-        combined (bool): If True, the videos will be downloaded into the /raw/combine/videos folder.
+        metadata (pd.DataFrame): DataFrame containing metadata for videos with columns: label, data_source, video_url
+        verify_ssl_settings (dict): Dictionary mapping data source codes to SSL verification settings.
+                                  e.g., {'ne': True, 'vl': False, 'sb': False, 'uf': True}
         verbose (bool): If True, print download status messages.
-        verify_ssl (bool): Whether to verify SSL certificates. Set to False for self-signed/invalid certs.
     """
-    # Filter metadata for the given data source
-    if data_source_key is not None:
-        filtered_metadata = metadata[metadata['data_source'] == data_source_key]
-    else:
-        filtered_metadata = metadata
-    
-    if filtered_metadata.empty:
-        print(f"No data found for source: {data_source_codes[data_source_key]}")
+    if metadata.empty:
+        print("No data found in metadata")
         return
     
-    # Filter for the given label
-    filtered_metadata = filtered_metadata[filtered_metadata['label'] == label]
-    if filtered_metadata.empty:
-        print(f"No data found for label: {label} in {data_source_codes[data_source_key]}")
-        return
+    # Default SSL verification settings if none provided
+    if verify_ssl_settings is None:
+        verify_ssl_settings = {code: True for code in data_source_codes.keys()}
     
-    # Loop through each row in the filtered metadata
-    i = 1
-    for df_index, row in filtered_metadata.iterrows():
+    # Loop through each row in the metadata
+    for index, row in metadata.iterrows():
         video_url = row['video_url']
-        video_name = make_video_filename(row, i)
-
-        if combined:
-            output_path = os.path.join('data', 'raw', 'combined', 'videos')
-        else:
-            if data_source_key is None:
-                data_source = data_source_codes[row['data_source']]
-            else:
-                data_source = data_source_codes[data_source_key]
-            output_path = os.path.join('data', 'raw', data_source, 'videos')
+        video_name = make_video_filename(row, index + 1)
+        
         video_path = os.path.join(output_path, video_name)
         
         if verbose:
-            print(f"Downloading video {i} from {video_url}")
-        # download_video_from_link(video_url, video_path, verify_ssl=verify_ssl)
-        if data_source_key == 'sb':
-            download_video_from_link(video_url, video_path, verify_ssl=False)
-        else:
-            download_video_from_link(video_url, video_path, verify_ssl=verify_ssl)
-        i += 1
-
+            print(f"Downloading video {index + 1} from {video_url}")
+        
+        # Get SSL verification setting for this data source
+        verify_ssl = verify_ssl_settings.get(row['data_source'], True)
+        download_video_from_link(video_url, video_path, verify_ssl=verify_ssl)
 
 def get_video_metadata(video_path):
     cap = cv2.VideoCapture(video_path)

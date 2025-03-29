@@ -55,11 +55,12 @@ def download_videos_from_metadata(metadata: pd.DataFrame, output_path: str, veri
         verify_ssl_settings = {code: True for code in data_source_codes.keys()}
     
     # Loop through each row in the metadata
-    for index, row in metadata.iterrows():
-        video_url = row['video_url']
-        video_name = make_video_filename(row, index + 1)
-        
-        video_path = os.path.join(output_path, video_name)
+    for label, label_metadata in metadata.groupby('label'):
+        for index, row in label_metadata.reset_index().iterrows():
+            video_url = row['video_url']
+            video_name = make_video_filename(row, index + 1)
+            
+            video_path = os.path.join(output_path, video_name)
         
         if verbose:
             print(f"Downloading video {index + 1} from {video_url}")

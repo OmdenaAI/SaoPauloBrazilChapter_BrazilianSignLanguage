@@ -32,8 +32,8 @@ class VideoAnalyzer:
         path_to_root: str,
         params_dict: Dict = None,
         verbose: bool = True,
-        motion_detection_version: str = "v1",
-        pose_detection_version: str = "v1",
+        motion_detection_version: str = "versionA",
+        pose_detection_version: str = "versionA",
         ):
         """
         Initialize the VideoAnalyzer with metadata and parameters.
@@ -44,8 +44,8 @@ class VideoAnalyzer:
             path_to_root: Path to the root directory of the project
             params_dict: Dictionary of parameters for analysis (thresholds, etc.)
             verbose: Whether to print details about parameter sources
-            motion_detection_version: Version of motion detection to use (default: "v1")
-            pose_detection_version: Version of pose detection to use (default: "v1")
+            motion_detection_version: Version of motion detection to use (default: "versionA")
+            pose_detection_version: Version of pose detection to use (default: "versionA")
         """
         # Set required parameters as attributes
         self.timestamp = timestamp
@@ -55,20 +55,20 @@ class VideoAnalyzer:
         
         # Set up base directories
         self.interim_dir = os.path.join(self.path_to_root, "data", "interim")
-        self.motion_detection_dir = os.path.join(self.interim_dir, "MotionDetection")
-        self.pose_estimation_dir = os.path.join(self.interim_dir, "PoseEstimation")
+        self.motion_detection_dir = os.path.join(self.interim_dir, "RawMotionMeasurements")
+        self.pose_estimation_dir = os.path.join(self.interim_dir, "RawPoseLandmarks")
         self.videos_dir = os.path.join(self.interim_dir, "Videos")
-        self.params_dir = os.path.join(self.interim_dir, "Params", self.timestamp)
+        self.results_dir = os.path.join(self.interim_dir, "Analysis", self.timestamp, "individual_json")
         
         # Create directories if they don't exist
         for directory in [
             os.path.join(self.interim_dir),
             os.path.join(self.motion_detection_dir),
-            os.path.join(self.motion_detection_dir, "RawMotionMeasurements", self.motion_detection_version),
+            os.path.join(self.motion_detection_dir, self.motion_detection_version),
             os.path.join(self.pose_estimation_dir),
-            os.path.join(self.pose_estimation_dir, "RawLandmarks", self.pose_detection_version), 
+            os.path.join(self.pose_estimation_dir, self.pose_detection_version), 
             os.path.join(self.videos_dir),
-            os.path.join(self.params_dir)
+            os.path.join(self.results_dir),
         ]:
             if not os.path.exists(directory):
                 os.makedirs(directory, exist_ok=True)
@@ -163,7 +163,7 @@ class VideoAnalyzer:
         
         # Save params for reference
         params_path = os.path.join(
-            self.params_dir,
+            self.results_dir,
             f"{self.filename.split('.')[0]}_params.json"
             )
         with open(params_path, "w") as f:
@@ -211,9 +211,9 @@ class VideoAnalyzer:
             Dictionary containing loaded results or empty dict if none found
         """
         if result_type == "motion":
-            base_path = os.path.join(self.motion_detection_dir, "RawMotionMeasurements", self.motion_detection_version)
+            base_path = os.path.join(self.motion_detection_dir, self.motion_detection_version)
         elif result_type == "pose":
-            base_path = os.path.join(self.pose_estimation_dir, "RawLandmarks", self.pose_detection_version)
+            base_path = os.path.join(self.pose_estimation_dir, self.pose_detection_version)
         else:
             raise ValueError(f"Unknown result type: {result_type}")
         
@@ -334,8 +334,7 @@ class VideoAnalyzer:
         """Save only the raw motion detection results to disk. They can be reused later with different processing parameters."""
         # Create directory for results
         result_dir = os.path.join(
-            self.motion_detection_dir, 
-            "RawMotionMeasurements",
+            self.motion_detection_dir,
             self.motion_detection_version
         )
         os.makedirs(result_dir, exist_ok=True)
@@ -451,7 +450,7 @@ class VideoAnalyzer:
         
         # Store results
         self.pose_data = {
-            "landmarks": landmarks_list,
+            "landmarks_raw": landmarks_list,
             "params": {
                 "pose_static_image_mode": self.params.get("pose_static_image_mode"),
                 "pose_model_complexity": self.params.get("pose_model_complexity"),
@@ -471,7 +470,6 @@ class VideoAnalyzer:
         # Create directory for results
         result_dir = os.path.join(
             self.pose_estimation_dir, 
-            "RawLandmarks",
             self.pose_detection_version
         )
         os.makedirs(result_dir, exist_ok=True)
@@ -618,121 +616,9 @@ class VideoAnalyzer:
         }
         
         # Save to file
-        output_path = os.path.join(self.interim_dir, f"{self.filename.split('.')[0]}_analysis_info.json")
+        output_path = os.path.join(self.results_dir, f"{self.filename.split('.')[0]}_analysis_info.json")
         with open(output_path, "w") as f:
             json.dump(analysis_info, f, indent=4)
         
         print(f"Saved analysis info to {output_path}")
         return analysis_info
-    
-    def process_video_with_offsets(self, output_path: Optional[str] = None) -> str:
-        """
-        Process video with horizontal and vertical offsets based on pose estimation.
-        
-        Args:
-            output_path: Path to save the processed video
-            
-        Returns:
-            Path to the processed video
-        """
-        try:
-            # Check if MediaPipeHolistic is available
-            if 'MediaPipeHolistic' not in globals():
-                raise ImportError("MediaPipeHolistic not available")
-            
-            # Check if we have pose data
-            if not hasattr(self, "pose_data") or not self.pose_data:
-                self.pose_detect()
-            
-            # Check if we have start and end frames
-            if self.start_frame is None or self.end_frame is None:
-                if not hasattr(self, "motion_data") or not self.motion_data:
-                    self.motion_detect()
-                self.motion_analyze()
-            
-            # Generate output path if not provided
-            if output_path is None:
-                output_dir = os.path.join(self.videos_dir, "processed")
-                os.makedirs(output_dir, exist_ok=True)
-                output_path = os.path.join(output_dir, f"{self.filename}_processed.mp4")
-            
-            video_path = self.get_raw_video_path()
-            
-            # Create MediaPipe instance
-            mp_holistic = mph.MediaPipeHolistic(
-                static_image_mode=self.params.get("pose_static_image_mode"),
-                model_complexity=self.params.get("pose_model_complexity"),
-                smooth_landmarks=self.params.get("pose_smooth_landmarks"),
-                min_detection_confidence=self.params.get("pose_min_detection_confidence"),
-                min_tracking_confidence=self.params.get("pose_min_tracking_confidence")
-            )
-            
-            # Get horizontal offsets
-            offsets = mp_holistic.get_video_horizontal_offsets(
-                self.pose_data["landmarks_raw"],
-                use_shoulders=True,
-                use_face=True,
-                use_hips=False
-            )
-            
-            # Get average offset for the video
-            horizontal_offsets = [data["offset"] for _, data in offsets.items()]
-            avg_horizontal_offset = sum(horizontal_offsets) / len(horizontal_offsets) if horizontal_offsets else 0
-            
-            # Open the video
-            cap = cv2.VideoCapture(video_path)
-            if not cap.isOpened():
-                raise ValueError(f"Error opening video file: {video_path}")
-            
-            # Get video properties
-            fps = self.fps
-            width = self.width
-            height = self.height
-            
-            # Initialize video writer
-            fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-            out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
-            if not out.isOpened():
-                raise ValueError(f"Error creating output video file: {output_path}")
-            
-            print(f"Processing video with average horizontal offset: {avg_horizontal_offset}")
-            print(f"Trimming video from frame {self.start_frame} to {self.end_frame}")
-            
-            try:
-                i = 0
-                while cap.isOpened():
-                    ret, frame = cap.read()
-                    if not ret:
-                        break
-                    
-                    # Skip frames before start_frame
-                    if i < self.start_frame:
-                        i += 1
-                        continue
-                    
-                    # Stop after end_frame
-                    if i > self.end_frame:
-                        break
-                    
-                    # Apply horizontal alignment
-                    horizontal_pixel_offset = int(round(width * avg_horizontal_offset, 0))
-                    horizontally_aligned_frame = np.roll(frame, horizontal_pixel_offset, axis=1)
-                    
-                    # Save the frame
-                    out.write(horizontally_aligned_frame)
-                    i += 1
-                
-                print(f"Processed video saved to {output_path}")
-                return output_path
-                
-            finally:
-                # Clean up resources
-                cap.release()
-                out.release()
-            
-        except ImportError as e:
-            print(f"Video processing not available: {e}")
-            return ""
-        except Exception as e:
-            print(f"Error in video processing: {e}")
-            return ""

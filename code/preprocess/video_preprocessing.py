@@ -1,9 +1,6 @@
 import cv2
-import numpy as np
-import pandas as pd
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple, Union
-import logging
+from typing import Union
 
 def resize_video_with_crop(input_path: Union[str, Path], 
                          output_path: Union[str, Path],
@@ -25,7 +22,6 @@ def resize_video_with_crop(input_path: Union[str, Path],
     
     # Get video properties
     fps = cap.get(cv2.CAP_PROP_FPS)
-    frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     orig_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     orig_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     

@@ -2,9 +2,8 @@ import os
 import json
 import numpy as np
 import cv2
-from typing import Dict, List, Optional, Tuple, Any, Union
+from typing import Dict, List
 import pandas as pd
-import shutil
 
 class Preprocessor:
     """
@@ -185,7 +184,8 @@ class Preprocessor:
         v_aligned_frames = self._vertical_align_frames(scaled_frames)
         
         # Save after vertical alignment to interim directory
-        interim_video_path = self._save_interim_video(v_aligned_frames)
+        if save_intermediate:
+            self._save_interim_video(v_aligned_frames, "aligned")
         
         # Step 5: Padding to target duration
         padded_frames = self._pad_frames_to_duration(v_aligned_frames)
@@ -352,7 +352,7 @@ class Preprocessor:
         if self.verbose:
             shift_direction = "right" if pixel_shift > 0 else "left" if pixel_shift < 0 else "none"
             print(f"Horizontally aligned frames with offset {horizontal_offset}, shifted {abs(pixel_shift)} pixels {shift_direction}")
-            print(f"Filled empty space with edge colors from the original frame")
+            print("Filled empty space with edge colors from the original frame")
             
         return aligned_frames
     
@@ -411,7 +411,7 @@ class Preprocessor:
             
         if self.verbose:
             print(f"Scaled frames with factors: x={x_scale}, y={y_scale}")
-            print(f"Using edge colors to fill any empty space from scaling")
+            print("Using edge colors to fill any empty space from scaling")
             
         return scaled_frames
     
@@ -491,7 +491,7 @@ class Preprocessor:
         if self.verbose:
             shift_direction = "down" if pixel_shift > 0 else "up" if pixel_shift < 0 else "none"
             print(f"Vertically aligned frames with offset {vertical_offset}, shifted {abs(pixel_shift)} pixels {shift_direction}")
-            print(f"Filled empty space with edge colors from the original frame")
+            print("Filled empty space with edge colors from the original frame")
             
         return aligned_frames
     

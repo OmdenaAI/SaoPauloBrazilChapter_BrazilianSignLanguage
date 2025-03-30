@@ -1,10 +1,7 @@
 import os
 import json
-import time
 import numpy as np
-import cv2
-from typing import Dict, List, Optional, Tuple, Any, Union
-import datetime
+from typing import Dict, Optional
 
 import motion_detection as md
 

@@ -1,11 +1,10 @@
 import numpy as np
 from typing import Union, Dict, List, Tuple, Iterable
-import yaml
 from utils import check_mode, check_landmark_type, check_distance_type, load_config
 
-import numpy as np
 
-def distance(p1, p2, mode: str = '3D', distance_type: str = 'shifted_dist') -> float:
+
+def distance(p1, p2, mode: str = "3D", distance_type: str = "shifted_dist") -> float:
     """
     Computes distance between two points with support for normalized and shifted variants.
 
@@ -28,25 +27,18 @@ def distance(p1, p2, mode: str = '3D', distance_type: str = 'shifted_dist') -> f
     check_mode(mode)
     check_distance_type(distance_type)
 
-    if mode == '3D':
-        dist = np.sqrt(
-            (p1.x - p2.x) ** 2 +
-            (p1.y - p2.y) ** 2 +
-            (p1.z - p2.z) ** 2
-        )
+    if mode == "3D":
+        dist = np.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2 + (p1.z - p2.z) ** 2)
         max_dist = np.sqrt(12)  # max distance in 3D normalized space [-1,1]
     else:
-        dist = np.sqrt(
-            (p1.x - p2.x) ** 2 +
-            (p1.y - p2.y) ** 2
-        )
+        dist = np.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2)
         max_dist = np.sqrt(8)  # max distance in 2D normalized space [-1,1]
 
-    if distance_type == 'dist':
+    if distance_type == "dist":
         return dist
-    elif distance_type == 'normalized_dist':
+    elif distance_type == "normalized_dist":
         return dist / max_dist
-    elif distance_type == 'shifted_dist':
+    elif distance_type == "shifted_dist":
         return (dist / max_dist) * 2 - 1  # scale to [-1, 1]
 
 
@@ -55,10 +47,12 @@ class DistancesEstimator:
     Estimates distances between pairs of landmarks, with support for normalized and shifted distance types.
     """
 
-    def __init__(self, 
-                 hand_distances: Union[str, Dict], 
-                 pose_distances: Union[str, Dict], 
-                 mode: str = '3D'):
+    def __init__(
+        self,
+        hand_distances: Union[str, Dict],
+        pose_distances: Union[str, Dict],
+        mode: str = "3D",
+    ):
         """
         Parameters:
         ----------
@@ -82,19 +76,20 @@ class DistancesEstimator:
         self.hand_distance_pairs = list(self.hand_distances.values())
         self.hand_distance_names = list(self.hand_distances.keys())
 
-    def __compute_distances(self, 
-                            landmark_pairs: List[Tuple[int]], 
-                            landmarks: Iterable, 
-                            distance_type: str) -> List[float]:
+    def __compute_distances(
+        self, landmark_pairs: List[Tuple[int]], landmarks: Iterable, distance_type: str
+    ) -> List[float]:
         return [
             distance(landmarks[start], landmarks[end], self.mode, distance_type)
             for start, end in landmark_pairs
         ]
 
-    def compute_distances(self, 
-                          landmarks: Iterable, 
-                          landmark_type: str, 
-                          distance_type: str = 'shifted_dist') -> List[float]:
+    def compute_distances(
+        self,
+        landmarks: Iterable,
+        landmark_type: str,
+        distance_type: str = "shifted_dist",
+    ) -> List[float]:
         """
         Compute distances between defined landmark pairs.
 
@@ -114,15 +109,21 @@ class DistancesEstimator:
         check_landmark_type(landmark_type)
         check_distance_type(distance_type)
 
-        if landmark_type == 'pose':
-            return self.__compute_distances(self.pose_distance_pairs, landmarks, distance_type)
+        if landmark_type == "pose":
+            return self.__compute_distances(
+                self.pose_distance_pairs, landmarks, distance_type
+            )
         else:
-            return self.__compute_distances(self.hand_distance_pairs, landmarks, distance_type)
+            return self.__compute_distances(
+                self.hand_distance_pairs, landmarks, distance_type
+            )
 
-    def compute_annotated_distances(self, 
-                                    landmarks: Iterable, 
-                                    landmark_type: str, 
-                                    distance_type: str = 'shifted_dist') -> Dict[str, float]:
+    def compute_annotated_distances(
+        self,
+        landmarks: Iterable,
+        landmark_type: str,
+        distance_type: str = "shifted_dist",
+    ) -> Dict[str, float]:
         """
         Compute named distances for use in analysis or visualization.
 
@@ -142,13 +143,19 @@ class DistancesEstimator:
         check_landmark_type(landmark_type)
         check_distance_type(distance_type)
 
-        if landmark_type == 'pose':
-            distances = self.__compute_distances(self.pose_distance_pairs, landmarks, distance_type)
+        if landmark_type == "pose":
+            distances = self.__compute_distances(
+                self.pose_distance_pairs, landmarks, distance_type
+            )
             names = self.pose_distance_names
-        elif landmark_type == 'hand':
-            distances = self.__compute_distances(self.hand_distance_pairs, landmarks, distance_type)
+        elif landmark_type == "hand":
+            distances = self.__compute_distances(
+                self.hand_distance_pairs, landmarks, distance_type
+            )
             names = self.hand_distance_names
         else:
-            raise ValueError("Parameter 'landmark_type' must be either 'pose' or 'hand'.")
+            raise ValueError(
+                "Parameter 'landmark_type' must be either 'pose' or 'hand'."
+            )
 
         return dict(zip(names, distances))

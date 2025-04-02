@@ -111,11 +111,6 @@
     },
     {
         "dataset": "UFV",
-        "word": "pessoa",
-        "video_match": true
-    },
-    {
-        "dataset": "UFV",
         "word": "sopa",
         "video_match": true
     },

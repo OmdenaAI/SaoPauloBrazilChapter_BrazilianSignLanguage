@@ -20,7 +20,6 @@ homem: man
 jovem: young/young person
 ouvir: to listen
 pai: father
-pessoa: person
 sopa: soup
 sorvete: ice cream
 vagina: vagina

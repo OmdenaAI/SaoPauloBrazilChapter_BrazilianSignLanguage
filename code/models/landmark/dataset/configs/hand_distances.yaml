@@ -1,0 +1,15 @@
+thumb_index_tip: [4, 8]
+thumb_middle_tip: [4, 12]
+thumb_ring_tip: [4, 16]
+thumb_pinky_tip: [4, 20]
+
+index_middle_tip: [8, 12]
+middle_ring_tip: [12, 16]
+ring_pinky_tip: [16, 20]
+
+index_ring_tip: [8, 16]
+index_pinky_tip: [8, 20]
+
+index_base_spread: [5, 9]   # index_mcp – middle_mcp
+middle_base_spread: [9, 13] # middle_mcp – ring_mcp
+ring_base_spread: [13, 17]  # ring_mcp – pinky_mcp

@@ -3,6 +3,7 @@ import mediapipe as mp
 import numpy as np
 from typing import Dict, List, Optional, Tuple
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 
 class MediaPipeHolistic:
     def __init__(self,
@@ -30,7 +31,8 @@ class MediaPipeHolistic:
             enable_segmentation: Whether to generate segmentation mask.
             smooth_segmentation: Whether to filter segmentation across different input images to reduce jitter.
                                Should be disabled for static images.
-            refine_face_landmarks: Whether to further refine the landmark coordinates around the eyes and lips, and output additional landmarks around the irises.
+            refine_face_landmarks: Whether to further refine the landmark coordinates around the eyes and lips, 
+                                 and output additional landmarks around the irises.
             min_detection_confidence: Minimum confidence value ([0.0, 1.0]) for person detection to be considered successful.
             min_tracking_confidence: Minimum confidence value ([0.0, 1.0]) for the pose landmarks to be considered tracked 
                                   successfully. Only used when static_image_mode is False.

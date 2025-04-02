@@ -2,8 +2,10 @@ import os
 import json
 import numpy as np
 import cv2
-from typing import Dict, List
+from typing import Dict, List, Optional, Tuple, Any, Union
 import pandas as pd
+import shutil
+import copy
 
 class Preprocessor:
     """
@@ -152,7 +154,7 @@ class Preprocessor:
         if not cap.isOpened():
             raise ValueError(f"Error opening video file: {video_path}")
         
-        # Read all frames
+        # Read all framesManual control from frontend (e.g. "Stop" button)
         frames = []
         while True:
             ret, frame = cap.read()
@@ -184,8 +186,7 @@ class Preprocessor:
         v_aligned_frames = self._vertical_align_frames(scaled_frames)
         
         # Save after vertical alignment to interim directory
-        if save_intermediate:
-            self._save_interim_video(v_aligned_frames, "aligned")
+        interim_video_path = self._save_interim_video(v_aligned_frames)
         
         # Step 5: Padding to target duration
         padded_frames = self._pad_frames_to_duration(v_aligned_frames)
@@ -231,21 +232,49 @@ class Preprocessor:
             
         # Step 1: Trim landmarks
         trimmed_landmarks = self._trim_landmarks(landmarks)
-        
+
+        output_filename = f"{self.filename.split('.')[0]}_1_trimmed.npy"
+        output_path = os.path.join(self.interim_landmarks_dir, "versionA", output_filename)
+        np.save(output_path, trimmed_landmarks)
+
         # Step 2: Horizontal alignment
         aligned_landmarks = self._horizontal_align_landmarks(trimmed_landmarks)
         
+        # DEBUG: Compare trimmed and aligned landmarks
+        self._debug_landmarks_format(trimmed_landmarks, aligned_landmarks, frame_idx=0, 
+                                  label1="Trimmed", label2="Horizontally Aligned")
+
+        output_filename = f"{self.filename.split('.')[0]}_2_h_aligned.npy"
+        output_path = os.path.join(self.interim_landmarks_dir, "versionA", output_filename)
+        np.save(output_path, aligned_landmarks)
+        
         # Step 3: Scale landmarks
         scaled_landmarks = self._scale_landmarks(aligned_landmarks)
+
+        output_filename = f"{self.filename.split('.')[0]}_3_scaled.npy"
+        output_path = os.path.join(self.interim_landmarks_dir, "versionA", output_filename)
+        np.save(output_path, scaled_landmarks)
         
         # Step 4: Vertical alignment
         v_aligned_landmarks = self._vertical_align_landmarks(scaled_landmarks)
+
+        output_filename = f"{self.filename.split('.')[0]}_4_v_aligned.npy"
+        output_path = os.path.join(self.interim_landmarks_dir, "versionA", output_filename)
+        np.save(output_path, v_aligned_landmarks)
         
         # Step 5: Padding to target duration
         padded_landmarks = self._pad_landmarks_to_duration(v_aligned_landmarks)
         
+        output_filename = f"{self.filename.split('.')[0]}_5_padded.npy"
+        output_path = os.path.join(self.interim_landmarks_dir, "versionA", output_filename)
+        np.save(output_path, padded_landmarks)
+        
         # Step 6: Crop/resize if needed (equivalent for landmarks)
         processed_landmarks = self._crop_resize_landmarks(padded_landmarks)
+        
+        output_filename = f"{self.filename.split('.')[0]}_6_cropped.npy"
+        output_path = os.path.join(self.interim_landmarks_dir, "versionA", output_filename)
+        np.save(output_path, processed_landmarks)
         
         # Step 7: Save final preprocessed landmarks
         output_path = self._save_preprocessed_landmarks(processed_landmarks)
@@ -352,7 +381,7 @@ class Preprocessor:
         if self.verbose:
             shift_direction = "right" if pixel_shift > 0 else "left" if pixel_shift < 0 else "none"
             print(f"Horizontally aligned frames with offset {horizontal_offset}, shifted {abs(pixel_shift)} pixels {shift_direction}")
-            print("Filled empty space with edge colors from the original frame")
+            print(f"Filled empty space with edge colors from the original frame")
             
         return aligned_frames
     
@@ -411,7 +440,7 @@ class Preprocessor:
             
         if self.verbose:
             print(f"Scaled frames with factors: x={x_scale}, y={y_scale}")
-            print("Using edge colors to fill any empty space from scaling")
+            print(f"Using edge colors to fill any empty space from scaling")
             
         return scaled_frames
     
@@ -491,7 +520,7 @@ class Preprocessor:
         if self.verbose:
             shift_direction = "down" if pixel_shift > 0 else "up" if pixel_shift < 0 else "none"
             print(f"Vertically aligned frames with offset {vertical_offset}, shifted {abs(pixel_shift)} pixels {shift_direction}")
-            print("Filled empty space with edge colors from the original frame")
+            print(f"Filled empty space with edge colors from the original frame")
             
         return aligned_frames
     
@@ -772,6 +801,38 @@ class Preprocessor:
             
         return trimmed
     
+    def _deep_copy_landmarks_frame(self, frame_landmarks):
+        """
+        Create a deep copy of a landmarks frame while preserving MediaPipe object structure.
+        
+        Args:
+            frame_landmarks: Dictionary containing landmark data for a single frame
+            
+        Returns:
+            Deep copy of the landmarks frame with preserved structure
+        """
+        if frame_landmarks is None:
+            return None
+            
+        # Create a copy of the frame's landmarks
+        new_frame = {}
+        for key in frame_landmarks.keys():
+            if key not in ['pose_landmarks', 'face_landmarks', 'left_hand_landmarks', 'right_hand_landmarks']:
+                # Copy non-landmark keys directly
+                new_frame[key] = frame_landmarks[key]
+                continue
+            
+            # Skip None entries
+            if frame_landmarks[key] is None:
+                new_frame[key] = None
+                continue
+            
+            # Get the landmarks for this type and create a deep copy
+            landmarks_obj = frame_landmarks[key]
+            new_frame[key] = copy.deepcopy(landmarks_obj)
+        
+        return new_frame
+
     def _horizontal_align_landmarks(self, landmarks: np.ndarray) -> np.ndarray:
         """
         Align landmarks horizontally based on horizontal_offset.
@@ -781,12 +842,6 @@ class Preprocessor:
             
         Returns:
             Array of horizontally aligned landmarks
-            
-        Note:
-            horizontal_offset is between -1 and 1, where:
-            - 0 means no change
-            - Negative values shift the content left
-            - Positive values shift the content right
         """
         horizontal_offset = self.params["horizontal_offset"]
         
@@ -797,59 +852,41 @@ class Preprocessor:
             return landmarks.copy()
         
         # Apply shift directly based on horizontal_offset
-        aligned_landmarks = landmarks.copy()
+        aligned_landmarks = []
         
         # Process each frame's landmarks
-        for i in range(len(aligned_landmarks)):
-            # For MediaPipe landmarks - each entry is a dictionary of different landmark types
-            # Handle all landmark types that might be present
-            frame_landmarks = aligned_landmarks[i]
+        for frame_idx in range(len(landmarks)):
+            frame_landmarks = landmarks[frame_idx]
             
-            # Skip None entries
-            if frame_landmarks is None:
+            # Make a deep copy of the frame landmarks
+            new_frame = self._deep_copy_landmarks_frame(frame_landmarks)
+            if new_frame is None:
+                aligned_landmarks.append(None)
                 continue
-                
-            # Process each landmark type (pose, face, hands)
-            for landmark_type in ['pose_landmarks', 'face_landmarks', 'left_hand_landmarks', 'right_hand_landmarks']:
-                if landmark_type in frame_landmarks and frame_landmarks[landmark_type] is not None:
-                    # Get the landmarks for this type
-                    landmarks_obj = frame_landmarks[landmark_type]
-                    
-                    # Create a new list for the modified landmarks
-                    new_landmarks = []
-                    
-                    # Process each landmark
-                    for lm in landmarks_obj.landmark:
+            
+            # Update the x coordinates with the offset
+            for key in ['pose_landmarks', 'face_landmarks', 'left_hand_landmarks', 'right_hand_landmarks']:
+                if key in new_frame and new_frame[key] is not None:
+                    for i, lm in enumerate(new_frame[key].landmark):
                         # Add shift directly (positive value shifts right, negative shifts left)
                         new_x = lm.x + horizontal_offset
                         
                         # If shifted outside boundaries, push to edge
-                        if new_x < 0:
-                            new_x = 0
-                        elif new_x > 1:
-                            new_x = 1
-                            
-                        # Create a new landmark with the updated x coordinate
-                        new_lm = type(lm)()
-                        new_lm.x = new_x
-                        new_lm.y = lm.y
-                        new_lm.z = lm.z
-                        if hasattr(lm, 'visibility'):
-                            new_lm.visibility = lm.visibility
+                        new_x = max(0, min(1, new_x))
                         
-                        new_landmarks.append(new_lm)
-                    
-                    # Replace the landmarks with the updated ones
-                    new_landmark_obj = type(landmarks_obj)()
-                    new_landmark_obj.landmark.extend(new_landmarks)
-                    frame_landmarks[landmark_type] = new_landmark_obj
+                        # Update the x coordinate in place
+                        new_frame[key].landmark[i].x = new_x
+            
+            aligned_landmarks.append(new_frame)
+        
+        # Convert to numpy array
+        aligned_landmarks = np.array(aligned_landmarks, dtype=object)
         
         if self.verbose:
             shift_direction = "right" if horizontal_offset > 0 else "left" if horizontal_offset < 0 else "none"
             print(f"Horizontally aligned landmarks with offset {horizontal_offset}, shifted {abs(horizontal_offset):.3f} {shift_direction}")
             
         return aligned_landmarks
-    
     def _scale_landmarks(self, landmarks: np.ndarray) -> np.ndarray:
         """
         Scale landmarks according to x_scale_factor and y_scale_factor.
@@ -859,45 +896,43 @@ class Preprocessor:
             
         Returns:
             Array of scaled landmarks
+            
+        Note:
+            Scale factors > 1 make the content larger
+            Scale factors < 1 make the content smaller
+            The scaling is applied relative to the center point (0.5, 0.5)
         """
         x_scale = self.params["x_scale_factor"]
         y_scale = self.params["y_scale_factor"]
-        
-        # Apply scaling to coordinates
-        scaled_landmarks = landmarks.copy()
         
         # Center point for scaling (0.5, 0.5)
         center_x, center_y = 0.5, 0.5
         
         # Process each frame's landmarks
-        for i in range(len(scaled_landmarks)):
-            # For MediaPipe landmarks - each entry is a dictionary of different landmark types
-            # Handle all landmark types that might be present
-            frame_landmarks = scaled_landmarks[i]
+        scaled_landmarks = []
+        for frame_idx in range(len(landmarks)):
+            frame_landmarks = landmarks[frame_idx]
             
-            # Skip None entries
-            if frame_landmarks is None:
+            # Make a deep copy of the frame landmarks
+            new_frame = self._deep_copy_landmarks_frame(frame_landmarks)
+            if new_frame is None:
+                scaled_landmarks.append(None)
                 continue
-                
-            # Process each landmark type (pose, face, hands)
-            for landmark_type in ['pose_landmarks', 'face_landmarks', 'left_hand_landmarks', 'right_hand_landmarks']:
-                if landmark_type in frame_landmarks and frame_landmarks[landmark_type] is not None:
-                    # Get the landmarks for this type
-                    landmarks_obj = frame_landmarks[landmark_type]
-                    
-                    # Create a new list for the modified landmarks
-                    new_landmarks = []
-                    
-                    # Process each landmark
-                    for lm in landmarks_obj.landmark:
+            
+            # Update the coordinates with scaling
+            for key in ['pose_landmarks', 'face_landmarks', 'left_hand_landmarks', 'right_hand_landmarks']:
+                if key in new_frame and new_frame[key] is not None:
+                    for i, lm in enumerate(new_frame[key].landmark):
                         # Calculate distance from center
                         dx = lm.x - center_x
                         dy = lm.y - center_y
                         
                         # Apply scale relative to center
-                        new_x = center_x + dx / x_scale
+                        # For scale < 1, the distance from center should decrease
+                        # For scale > 1, the distance from center should increase
+                        new_x = center_x + (dx * x_scale)
                         if lm.y <= center_y:
-                            new_y = center_y + dy / y_scale
+                            new_y = center_y + (dy * y_scale)
                         else:
                             new_y = lm.y
                         
@@ -905,26 +940,19 @@ class Preprocessor:
                         new_x = max(0, min(1, new_x))
                         new_y = max(0, min(1, new_y))
                         
-                        # Create a new landmark with the updated coordinates
-                        new_lm = type(lm)()
-                        new_lm.x = new_x
-                        new_lm.y = new_y
-                        new_lm.z = lm.z
-                        if hasattr(lm, 'visibility'):
-                            new_lm.visibility = lm.visibility
-                        
-                        new_landmarks.append(new_lm)
-                    
-                    # Replace the landmarks with the updated ones
-                    new_landmark_obj = type(landmarks_obj)()
-                    new_landmark_obj.landmark.extend(new_landmarks)
-                    frame_landmarks[landmark_type] = new_landmark_obj
+                        # Update coordinates in place
+                        new_frame[key].landmark[i].x = new_x
+                        new_frame[key].landmark[i].y = new_y
+            
+            scaled_landmarks.append(new_frame)
+        
+        # Convert to numpy array
+        scaled_landmarks = np.array(scaled_landmarks, dtype=object)
         
         if self.verbose:
             print(f"Scaled landmarks with factors: x={x_scale}, y={y_scale}")
             
         return scaled_landmarks
-    
     def _vertical_align_landmarks(self, landmarks: np.ndarray) -> np.ndarray:
         """
         Align landmarks vertically based on vertical_offset.
@@ -934,12 +962,6 @@ class Preprocessor:
             
         Returns:
             Array of vertically aligned landmarks
-            
-        Note:
-            vertical_offset is between -1 and 1, where:
-            - 0 means no change
-            - Negative values shift the content up
-            - Positive values shift the content down
         """
         vertical_offset = self.params["vertical_offset"]
         
@@ -950,52 +972,35 @@ class Preprocessor:
             return landmarks.copy()
         
         # Apply shift directly based on vertical_offset
-        aligned_landmarks = landmarks.copy()
+        aligned_landmarks = []
         
         # Process each frame's landmarks
-        for i in range(len(aligned_landmarks)):
-            # For MediaPipe landmarks - each entry is a dictionary of different landmark types
-            # Handle all landmark types that might be present
-            frame_landmarks = aligned_landmarks[i]
+        for frame_idx in range(len(landmarks)):
+            frame_landmarks = landmarks[frame_idx]
             
-            # Skip None entries
-            if frame_landmarks is None:
+            # Make a deep copy of the frame landmarks
+            new_frame = self._deep_copy_landmarks_frame(frame_landmarks)
+            if new_frame is None:
+                aligned_landmarks.append(None)
                 continue
-                
-            # Process each landmark type (pose, face, hands)
-            for landmark_type in ['pose_landmarks', 'face_landmarks', 'left_hand_landmarks', 'right_hand_landmarks']:
-                if landmark_type in frame_landmarks and frame_landmarks[landmark_type] is not None:
-                    # Get the landmarks for this type
-                    landmarks_obj = frame_landmarks[landmark_type]
-                    
-                    # Create a new list for the modified landmarks
-                    new_landmarks = []
-                    
-                    # Process each landmark
-                    for lm in landmarks_obj.landmark:
+            
+            # Update the y coordinates with the offset
+            for key in ['pose_landmarks', 'face_landmarks', 'left_hand_landmarks', 'right_hand_landmarks']:
+                if key in new_frame and new_frame[key] is not None:
+                    for i, lm in enumerate(new_frame[key].landmark):
                         # Add shift directly (positive value shifts down, negative shifts up)
                         new_y = lm.y + vertical_offset
                         
                         # If shifted outside boundaries, push to edge
-                        if new_y < 0:
-                            new_y = 0
-                        elif new_y > 1:
-                            new_y = 1
-                            
-                        # Create a new landmark with the updated y coordinate
-                        new_lm = type(lm)()
-                        new_lm.x = lm.x
-                        new_lm.y = new_y
-                        new_lm.z = lm.z
-                        if hasattr(lm, 'visibility'):
-                            new_lm.visibility = lm.visibility
+                        new_y = max(0, min(1, new_y))
                         
-                        new_landmarks.append(new_lm)
-                    
-                    # Replace the landmarks with the updated ones
-                    new_landmark_obj = type(landmarks_obj)()
-                    new_landmark_obj.landmark.extend(new_landmarks)
-                    frame_landmarks[landmark_type] = new_landmark_obj
+                        # Update y coordinate in place
+                        new_frame[key].landmark[i].y = new_y
+            
+            aligned_landmarks.append(new_frame)
+        
+        # Convert to numpy array
+        aligned_landmarks = np.array(aligned_landmarks, dtype=object)
         
         if self.verbose:
             shift_direction = "down" if vertical_offset > 0 else "up" if vertical_offset < 0 else "none"
@@ -1187,3 +1192,76 @@ class Preprocessor:
         
         if self.verbose:
             print(f"Updated landmarks metadata CSV at {csv_path}")
+
+    def _debug_landmarks_format(self, landmarks1, landmarks2, frame_idx=0, label1="Original", label2="Modified"):
+        """
+        Debug function to compare landmark formats and check for data loss between two landmark arrays.
+        
+        Args:
+            landmarks1: First landmarks array
+            landmarks2: Second landmarks array
+            frame_idx: Frame index to compare (default: 0)
+            label1: Label for first landmarks (default: "Original")
+            label2: Label for second landmarks (default: "Modified")
+        """
+        if frame_idx >= len(landmarks1) or frame_idx >= len(landmarks2):
+            print(f"Invalid frame index: {frame_idx}, arrays have lengths {len(landmarks1)} and {len(landmarks2)}")
+            return
+        
+        frame1 = landmarks1[frame_idx]
+        frame2 = landmarks2[frame_idx]
+        
+        print(f"Comparing {label1} vs {label2} landmarks for frame {frame_idx}")
+        print(f"{label1} frame type: {type(frame1)}")
+        print(f"{label2} frame type: {type(frame2)}")
+        
+        # Check keys in dictionary
+        if isinstance(frame1, dict) and isinstance(frame2, dict):
+            print(f"\nKeys in {label1}: {sorted(frame1.keys())}")
+            print(f"Keys in {label2}: {sorted(frame2.keys())}")
+            
+            # Compare landmark types
+            for landmark_type in ['pose_landmarks', 'face_landmarks', 'left_hand_landmarks', 'right_hand_landmarks']:
+                if landmark_type in frame1 and landmark_type in frame2:
+                    lm1 = frame1[landmark_type]
+                    lm2 = frame2[landmark_type]
+                    
+                    print(f"\n{landmark_type}:")
+                    print(f"  {label1} type: {type(lm1)}")
+                    print(f"  {label2} type: {type(lm2)}")
+                    
+                    if lm1 is None or lm2 is None:
+                        print(f"  One of the {landmark_type} is None")
+                        continue
+                    
+                    # Check attributes
+                    lm1_attrs = dir(lm1)
+                    lm2_attrs = dir(lm2)
+                    
+                    print(f"  {label1} attributes count: {len(lm1_attrs)}")
+                    print(f"  {label2} attributes count: {len(lm2_attrs)}")
+                    
+                    # Check for missing attributes
+                    missing_attrs = [attr for attr in lm1_attrs if attr not in lm2_attrs]
+                    if missing_attrs:
+                        print(f"  Attributes in {label1} but not in {label2}: {missing_attrs}")
+                    
+                    # Compare landmark count
+                    if hasattr(lm1, 'landmark') and hasattr(lm2, 'landmark'):
+                        print(f"  {label1} landmark count: {len(lm1.landmark)}")
+                        print(f"  {label2} landmark count: {len(lm2.landmark)}")
+                        
+                        # Check first landmark
+                        if len(lm1.landmark) > 0 and len(lm2.landmark) > 0:
+                            l1 = lm1.landmark[0]
+                            l2 = lm2.landmark[0]
+                            
+                            print(f"  First landmark in {label1}: (x={l1.x:.4f}, y={l1.y:.4f}, z={l1.z:.4f})")
+                            print(f"  First landmark in {label2}: (x={l2.x:.4f}, y={l2.y:.4f}, z={l2.z:.4f})")
+                            
+                            # Check attributes of individual landmarks
+                            l1_attrs = dir(l1)
+                            l2_attrs = dir(l2)
+                            missing_landmark_attrs = [attr for attr in l1_attrs if attr not in l2_attrs]
+                            if missing_landmark_attrs:
+                                print(f"  Landmark attributes in {label1} but not in {label2}: {missing_landmark_attrs}")

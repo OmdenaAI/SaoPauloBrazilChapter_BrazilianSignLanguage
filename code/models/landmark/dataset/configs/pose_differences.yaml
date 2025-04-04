@@ -1,0 +1,16 @@
+nose: 0
+
+left_shoulder: 11
+right_shoulder: 12
+
+left_elbow: 13
+right_elbow: 14
+
+left_wrist: 15
+right_wrist: 16
+
+left_index: 19
+right_index: 20
+
+left_thumb: 21
+right_thumb: 22

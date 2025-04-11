@@ -1,0 +1,7 @@
+lr: 1e-4
+num_epochs: 100
+patience: 5
+
+device: "cuda"
+
+log_path: ...

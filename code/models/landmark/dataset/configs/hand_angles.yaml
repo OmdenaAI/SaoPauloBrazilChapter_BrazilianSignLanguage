@@ -1,0 +1,15 @@
+thumb_base: [0, 1, 2]  # wrist → thumb_cmc → thumb_mcp
+thumb_bend: [1, 2, 3]
+thumb_tip: [2, 3, 4]
+
+index_bend: [5, 6, 7]
+index_tip: [6, 7, 8]
+
+middle_bend: [9, 10, 11]
+middle_tip: [10, 11, 12]
+
+ring_bend: [13, 14, 15]
+ring_tip: [14, 15, 16]
+
+pinky_bend: [17, 18, 19]
+pinky_tip: [18, 19, 20]

@@ -1,0 +1,22 @@
+data_dir: ..
+data_path: ...
+dataset_split: test
+
+landmark_order: [angles, distances, differences]
+landmark_feature_list: [angles, distances,differences]
+
+frame_interval_fn: uniform_intervals
+interval: 200
+
+distance_type: shifted_dist
+angle_type: func
+diff_type: normalized_diff
+
+hand_angle_triplets: hand_angles.yaml
+pose_angle_triplets: pose_angles.yaml
+
+hand_distance_pairs: hand_distances.yaml
+pose_distance_pairs: pose_distances.yaml
+
+hand_differences: hand_differences.yaml
+pose_differences: pose_distances.yaml

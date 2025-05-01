@@ -103,14 +103,32 @@ Below, you can find the approach used to solve each of the issues above.
 
 ## Preprocessing
 ### EDA
+*DRAFT*
+- Dataset differences
+    - 
+*DRAFT*
 ### Pose estimation with [MediaPipe Holistic](https://ai.google.dev/edge/mediapipe/solutions/guide)
 ### Start/End point definition
 ### Scaling and align videos
 ### Interpolating `none` frames
+*DRAFT*
+Context
+- Format of MediaPipe output
+    - For a frame, individual landmarks can't be none. Only the full group of landmarks can be none
+    - There are a few reasons to be None, and they also depend on the type
+- 99% of the time we have Nones, they are hand landmarks being None
+    - This is because of how they are detected
+    - A significant proportion of these are justified, the hand is not in the frame at the beginning or end
+        - Ignoring sequences of Nones at the start / end, we still have quite a lot of Nones
+        - (Plot showing None sequences)
+    - A significant proportion of these problematic Nones are from the lowest resolution dataset, INES 
+
+*DRAFT*
 
 ## Model development
 ### Landmark -> LSTM method
 #### Overview
+#### Train / Validation / Test split
 #### Feature Engineering
 #### Data Augmentation
 #### Models

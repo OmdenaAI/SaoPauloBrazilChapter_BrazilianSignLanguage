@@ -105,11 +105,59 @@ Below, you can find the approach used to solve each of the issues above.
 ### EDA
 *DRAFT*
 - Dataset differences
-    - 
+    - dimensions
+        - grid of data sources & dims
+    - frame rates
+        - on same grid as above?
+    - durations
+        - plot for each label
+
 *DRAFT*
 ### Pose estimation with [MediaPipe Holistic](https://ai.google.dev/edge/mediapipe/solutions/guide)
+why:
+    - will be used in preprocessing for motion detection, offset & scaling
+    - Will be used as the base features that will be input to the model
+
 ### Start/End point definition
+*DRAFT*
+#### motion detection 
+- we are explored various different methods for measuring motion between frames:
+    - bf sub
+    - Basic
+    - Landmarks
+- Each normalised and moving avgd for smooth results, and consistency between datasets
+    - we are mainly interested in peaks, so normalising makes sense
+    - We don’t have some sense of the correct ’absolute value’ across datasets
+- Show some before & after
+- show some example via gifs
+- for some previous versions, we used a combination of multiple, but in the final version settled on just landmarks
+#### detecting start and end
+- basic method is just taking an absolute threshold for the start & end
+- complex method involves 
+    - detecting the first and last peak to get the correct general location 
+    - taking the rate of change of the motion 
+    - Search back/forward from the peaks for the index where the slope has an inflection point 
+        - this should show when the movement really started 
+    - Go 0.X seconds before this as a buffer
+        - seconds rather than frames to be robust to different datasets
+- in the final version we just went for the simple version 
+    - both have threshold params that need tuned 
+    - But simple has less and is more intuitive 
+    - Without annotating our ground truth desired start / end, it is hard to tune this
+        - all we could do was manually experiment 
+- our method for tuning was just
+    - run manual experiments for a bunch of thresholds
+    - compare the variance of the start/end %
+        - assumption is it should be less if there are less extreme cases
+    - inspect the results of a sample of the data wit visualisation like these:
+- from our limited time experimenting, complex was not significantly better than simple. 
+    - with more time / annotations we could tune complex to be significantly better
+    - Simple was also robust to jittery motion
+    - We would need some more development to deal with this in complex 
+    - But in this limited time, just go for simple
+*DRAFT*
 ### Scaling and align videos
+
 ### Interpolating `none` frames
 *DRAFT*
 Context

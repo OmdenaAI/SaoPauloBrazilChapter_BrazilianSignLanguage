@@ -119,10 +119,11 @@ why:
     - Will be used as the base features that will be input to the model
 
 ### Start/End point definition
+our first preprocessing step is to trim the videos. We will remove the periods from the start and end of the video where the signer is stationary. Resulting in shorter videos where to the actual sign performance takes up the majority of the time.
 *DRAFT*
 #### motion detection 
-- we are explored various different methods for measuring motion between frames:
-    - bf sub
+- to do this we explored various different methods for measuring motion between frames:
+    - bg sub
     - Basic
     - Landmarks
 - Each normalised and moving avgd for smooth results, and consistency between datasets
@@ -157,6 +158,28 @@ why:
     - But in this limited time, just go for simple
 *DRAFT*
 ### Scaling and align videos
+The next 2 steps are unifying the scale and position alignment of the data. They are separate steps but quite similar and related.
+The basic process is to define some reference points that represent the target scale / alignment.
+plot?
+then by comparing a samples points to the reference points, we can calculate the scale factor to be applied, and the horizontal and vertical shifts to be applied.
+After some experiments and analysis, we decided to use these reference points/measurements as comparisons.
+Ref pts
+- we wanted to have the scale of the signer be as big as possible, so we lose as little info as possible by avoiding scaling down
+- We also wanted the scale to not be so big we cut off some info
+- from our analysis this scale results in the hands hardly ever being cut off from the edge
+Comparison
+- horizontal pos should be 0.5
+    - take weighted avg of face midpoint and shoulder midpoint
+- vertical pod should be approx A for shoulders midpoint and B for face midpoint
+    - take weighted avg of the two companions to get the offset
+- xscale
+- yScale
+An important point to mention is that for each series, we calculate these sfs and offsets based on an aggregate of the points on multiple frames, and then one sf/Forster value is applied to the full series. So within a series, the sense of scale & position is preserved. If the signer moves to the left in part of the video, we don’t shift them back to the center for those frames.
+
+Originally we used the median of all frames to calculate the reference points. The thinking was that the median would be less sensitive to outlier points due to something like above, the signer moving to the left. Or more commonly, their head tilting
+- [insert highest variance videos vs lowest variance videos]
+In the final iteration of the preprocessing, we moved to using the mean, not of the full series, but of just the frames before start/end frame.
+Our logic was that these frames are supposed to be when the signer is most stationary. So they will provide a better reference point for approximating the signers base position. As expected the variance of these points is less then the full video.
 
 ### Interpolating `none` frames
 *DRAFT*

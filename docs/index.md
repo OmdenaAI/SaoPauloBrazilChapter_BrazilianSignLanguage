@@ -54,7 +54,32 @@ Here's a list of people that contributed to the project. Feel free to reach out 
 *Cite the paper we used as reference*
 
 ## Data
+
 ### Scraping
+
+To build a robust dataset for Brazilian Sign Language (Libras), we identified four sources containing hundreds of videos representing various signs. Due to the scale and structure of these sources, we implemented web automation tools—primarily **Selenium**—to efficiently extract video URLs and relevant metadata.
+
+The scraped data was compiled into a CSV file, which served as a foundational resource for later stages of data cleaning, preprocessing, and modeling.
+
+**Data Sources:**
+
+* [INES](https://www.ines.gov.br/dicionario-de-libras/)
+* [Signbank (UFSC)](https://signbank.libras.ufsc.br/pt)
+* [UFV Dictionary](https://sistemas.cead.ufv.br/capes/dicionario/)
+* [V-Librasil Dataset](https://ieee-dataport.org/documents/v-librasil-new-dataset-signs-brazilian-sign-language-libras#files)
+
+**Web Automation Approach:**
+We used Selenium to automate the collection process, enabling consistent extraction of video files and associated metadata across varying site structures.
+
+**Extracted Metadata Fields:**
+The specific metadata varied slightly by source, but key fields included:
+
+* `alphabet_label`: the starting letter of the signed word
+* `label`: the word being signed in the video
+* `video_url`: direct link to the video file
+
+This standardized structure allowed us to create a unified dataset for downstream processing.
+
 ### Cleaning
 ### Review steps
 ### Final dataset

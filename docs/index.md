@@ -68,6 +68,9 @@ The scraped data was compiled into a CSV file, which served as a foundational re
 * [UFV Dictionary](https://sistemas.cead.ufv.br/capes/dicionario/)
 * [V-Librasil Dataset](https://ieee-dataport.org/documents/v-librasil-new-dataset-signs-brazilian-sign-language-libras#files)
 
+
+We scraped data from three Brazilian Sign Language (Libras) resources: INES, Signbank (UFSC), and VLibras. We used Python with Selenium to automate browsing and extract videos, words, and metadata. Each website had a different structure, so we customized the code for each. On INES, videos were downloaded directly. UFSC’s Signbank had scattered links, which we cleaned using pandas. VLibras was slower and more complex, so we scraped it manually with help from browser tools. We saved all data in organized CSV files.
+
 **Web Automation Approach:**
 We used Selenium to automate the collection process, enabling consistent extraction of video files and associated metadata across varying site structures.
 

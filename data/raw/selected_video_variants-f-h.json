@@ -1,0 +1,982 @@
+[
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "faca",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "faca",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "faca",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "INES",
+        "word": "faca",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "faca",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "faculdade",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "faculdade",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "faculdade",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "faculdade",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "falhar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "falhar",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "falhar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fam\u00edlia",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fam\u00edlia",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fam\u00edlia",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "INES",
+        "word": "fam\u00edlia",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "fam\u00edlia",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fantasma",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fantasma",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fantasma",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "INES",
+        "word": "fantasma",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "fantasma",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fechar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fechar",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fechar",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "INES",
+        "word": "fechar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "fechar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "feio",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "feio",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "feio",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "feio",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "feliz",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "feliz",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "feliz",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "INES",
+        "word": "feliz",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "feliz",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "festa",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "festa",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "festa",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "festa",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "filho",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "filho",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "filho",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "INES",
+        "word": "filho",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "filho",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "filme",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "filme",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "filme",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "filme",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "filme",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "fim",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "fim",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fim",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fim",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fim",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "flauta",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "flauta",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "flauta",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "flauta",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "flauta",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "flor",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "flor",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "flor",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "INES",
+        "word": "flor",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "flor",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fogo",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fogo",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fogo",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "INES",
+        "word": "fogo",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "fogo",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "foguete",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "foguete",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "foguete",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "foguete",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fome",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fome",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fome",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "INES",
+        "word": "fome",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "fome",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fora",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fora",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "fora",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "fora",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fora",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "INES",
+        "word": "forte",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "forte",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "forte",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "forte",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "forte",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fraco",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fraco",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "fraco",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "fraco",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "fraco",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "frio",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "frio",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "frio",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "frio",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "frio",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "futebol",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "futebol",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "futebol",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "futebol",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "futuro",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "futuro",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "futuro",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "INES",
+        "word": "futuro",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "futuro",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "f\u00edsica",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "f\u00edsica",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "f\u00edsica",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "galo",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "galo",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "INES",
+        "word": "galo",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "garfo",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "garfo",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "garfo",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "INES",
+        "word": "garfo",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "garfo",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "garganta",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "garganta",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "garganta",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "INES",
+        "word": "garganta",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "garganta",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "gastar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "gastar",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gastar",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gastar",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gato",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gato",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "INES",
+        "word": "gato",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "gato",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "gato",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "gay",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gay",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gay",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "gera\u00e7\u00e3o",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "gera\u00e7\u00e3o",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gera\u00e7\u00e3o",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gera\u00e7\u00e3o",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gera\u00e7\u00e3o",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gorila",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gorila",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "INES",
+        "word": "gorila",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "gorila",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "gostar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gostar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gostar",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gostar",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "governo",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "governo",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "governo",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "governo",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "governo",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "gram\u00e1tica",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "gram\u00e1tica",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gram\u00e1tica",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gram\u00e1tica",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "gravata",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "gravata",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gravata",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gravata",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gritar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gritar",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "gritar",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "INES",
+        "word": "gritar",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "gritar",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "guarda_chuva",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "guarda_chuva",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "guarda_chuva",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "INES",
+        "word": "guarda_chuva",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "guarda_chuva",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "guerra",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "guerra",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "guerra",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "guerra",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "helic\u00f3ptero",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "helic\u00f3ptero",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "helic\u00f3ptero",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "helic\u00f3ptero",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "helic\u00f3ptero",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "homem",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "homem",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "homem",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "INES",
+        "word": "homem",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "homem",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "hora",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "hora",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "hora",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "hora",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "INES",
+        "word": "hora",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "SIGNBANK",
+        "word": "hospital",
+        "chosen_video": 1
+    },
+    {
+        "dataset": "INES",
+        "word": "hospital",
+        "chosen_video": 0
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "hospital",
+        "chosen_video": 2
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "hospital",
+        "chosen_video": 3
+    },
+    {
+        "dataset": "V-LIBRASIL",
+        "word": "hospital",
+        "chosen_video": 1
+    }
+]

@@ -84,6 +84,20 @@ The specific metadata varied slightly by source, but key fields included:
 This standardized structure allowed us to create a unified dataset for downstream processing.
 
 ### Cleaning
+
+With the extracted videos, a cleaning step was applied. This task should solve and help with a few issues:
+
+1. **Homographs:** Like any other language, there are some cases of homographs in Portuguese, that is, words that have the same spelling and different meanings, an example of homograph in English is the word "bat" that could either refer to the animal or the object used to hit the ball in a baseball game. Due to the structure of the data, these words would be registered with the same label but have different signs.
+2. **Sign sinonyms:** Some words could have more than one sign, depending on the region or signer. Similarly to the homographs, these words would be registred under the same label but have different signs in the videos.
+3. **Lack of video examples:** Even though there were videos for every registered word in the datasets, some of them had fewer videos than others. For the project to be successful, it was necessary to have at least a certain amount of example videos to train the models.
+4. **Healthcare related words:** The project's main goal was to act on translating LIBRAS specifically in healthcare settings. Therefore, it was necessary to select health related words to compose a target dataset.
+
+Below, you can find the approach used to solve each of the issues above.
+
+#### Video reviewing
+[comment]: <TODO: continue video reviewing and data cleaning steps from here>
+
+
 ### Review steps
 ### Final dataset
 

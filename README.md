@@ -2,6 +2,23 @@
 
 This is a collaborative data science project under the Omdena São Paulo Chapter focused on Brazilian Sign Language (Libras) recognition. The project aims to develop machine learning models that can classify sign language videos into corresponding Portuguese words.
 
+The deliverables for this project consisted of a live demo application, the open source code, and a report of our work and results.
+
+**Demo Application:**
+[You can see the model in action and test it on your own videos in the **Demo App**](https://sao-paulo-brazil-chapter-brazilian-sign-language.vercel.app/).
+
+<div align="center">
+<img src="docs/assets/demo_app_video.gif" alt="isolated" title="hover hint" style="width: 50%; border: 2px solid #ddd;"/>
+<p><em>GIF showing the demo application in action</em></p>
+</div>
+
+**Detailed Report:**
+[This page has an overview of the project. For more details, jump to the **Report Page**](report)
+
+**Open Source Code:**
+You can find the project code and instructions for setup/usage in this  **Github Repo**
+
+
 ## Project Overview
 
 See [STRUCTURE.md](STRUCTURE.md) for detailed project organization.

@@ -8,7 +8,7 @@ The deliverables for this project consisted of a live demo application, the open
 [You can see the model in action and test it on your own videos in the **Demo App**](https://sao-paulo-brazil-chapter-brazilian-sign-language.vercel.app/).
 
 <div align="center">
-<img src="docs/assets/demo_app_video.gif" alt="isolated" title="hover hint" style="width: 50%; border: 2px solid #ddd;"/>
+<img src="docs/assets/demo_app_video.gif" alt="isolated" title="hover hint" style="width: 75%; border: 2px solid #ddd;"/>
 <p><em>GIF showing the demo application in action</em></p>
 </div>
 

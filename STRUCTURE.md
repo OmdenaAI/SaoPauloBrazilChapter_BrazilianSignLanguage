@@ -31,17 +31,23 @@ SaoPauloBrazilChapter_BrazilianSignLanguage/
 │   ├── papers/             # Related research papers
 │   └── README.md           # Data documentation
 │
-├── code/                    # Source code
-│   ├── data/               # Data processing
-│   ├── models/             # Model implementations
+├── docs/                   # Files for the github pages website
+│   └── assets/             # Images, gifs, etc.
+│
+├── code/                  # Source code
+│   ├── data/              # Data scraping & cleaning
+│   ├── eda/               # Exploratory data analysis
+│   ├── model/             # Model implementation & training
+│   └── preprocess/        # Preprocessing pipeline
 │
 ├── modelling/          # Model training and evaluation
-│   ├── logs/           # Logs
-│   └── model_files/    # Model files
+│   ├── logs/
+│   ├── metadata/
+│   └── runs
 │
-├── tests/                  # Unit tests
-│   ├── data/              # Data processing tests
-│   └── models/            # Model tests
+├── webapp/          # Webapp
+│   ├── backend/
+│   └── frontend/
 │
 ├── pyproject.toml          # Project metadata and dependencies
 ├── uv.lock                # Locked dependencies
@@ -88,38 +94,12 @@ SaoPauloBrazilChapter_BrazilianSignLanguage/
   - Individual metadata files for each processed file
 
 ### `code/`
-- `data/`: Data processing
-- `models/`: Model implementations
+- `data/`: Data scraping & cleaning
+- `eda/`: Exploratory data analysis
+- `model/`: Model implementation & training
+- `preprocess/`: Preprocessing pipeline
 
 ### `modelling/`
 - `logs/`: Logs
-- `model_files/`: Model files
-
-### `tests/`
-- `data/`: Data processing tests
-- `models/`: Model testing
-
-## Best Practices
-
-1. Data Management:
-   - Keep video files organized on Google Drive
-   - Document video file locations and versions
-   - Track small data files (CSVs, labels) in Git
-   - Keep raw data immutable
-   - Maintain version-specific metadata for processed data
-
-2. Environment Management:
-   - Use uv for dependency management
-   - Keep `pyproject.toml` updated
-   - Never edit `uv.lock` manually
-
-3. Code Organization:
-   - Keep notebooks for exploration
-   - Write tests for critical components
-   - Document data transformations
-
-4. Documentation:
-   - Document data formats and locations
-   - Keep README files updated
-   - Document setup steps for new team members
-   - Track preprocessing configurations in metadata files 
+- `metadata/`: Metadata
+- `runs/`: Runs
